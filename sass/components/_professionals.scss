@@ -19,8 +19,11 @@
     max-width: 486px;
 }
 
-.professionals__text:nth-child(1) {
+.professionals__container {
     margin-top: 26px;
+}
+
+.professionals__text:nth-child(1) {
     @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
     color: $text-color;
 }
@@ -31,4 +34,5 @@
 
 .professionals__item {
     margin-top: 12px;
+    max-width: 486px;
 }

@@ -33,3 +33,12 @@
 .ico-clock {
     background: url(./../../assets/icons/clock.svg) center center no-repeat;
 }
+
+.ico-check {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 17.5px);
+    width: 35px;
+    height: 35px;
+    background: url(./../../assets/icons/check.svg) center center no-repeat;
+}

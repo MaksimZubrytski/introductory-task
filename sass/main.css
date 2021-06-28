@@ -99,6 +99,15 @@ ul {
   background: url(./../../assets/icons/clock.svg) center center no-repeat;
 }
 
+.ico-check {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 17.5px);
+  width: 35px;
+  height: 35px;
+  background: url(./../../assets/icons/check.svg) center center no-repeat;
+}
+
 .button {
   box-sizing: border-box;
   border-radius: 4px;
@@ -285,8 +294,11 @@ ul {
   max-width: 486px;
 }
 
-.professionals__text:nth-child(1) {
+.professionals__container {
   margin-top: 26px;
+}
+
+.professionals__text:nth-child(1) {
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
@@ -300,6 +312,7 @@ ul {
 
 .professionals__item {
   margin-top: 12px;
+  max-width: 486px;
 }
 
 .product-managers {
@@ -309,5 +322,34 @@ ul {
 .product-managers__wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.product-managers__container {
+  margin-top: 50px;
+}
+
+.product-managers__text:nth-child(1) {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.6rem;
+  color: #544837;
+}
+
+.product-managers__text {
+  margin-top: 22px;
+  max-width: 486px;
+}
+
+.product-managers__item {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 65px;
+  max-width: 365px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.6rem;
+  color: #544837;
 }
 /*# sourceMappingURL=main.css.map */
