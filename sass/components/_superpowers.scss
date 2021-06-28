@@ -3,6 +3,9 @@
     @include media-small-desktop {
         padding: 60px 20px;
     }
+    @include media-mobile-small {
+        padding: 30px 10px;
+    }
 }
 
 .superpowers__wrapper {

@@ -6,6 +6,12 @@
 
 html {
     font-size: 10px;
+    @include media-mobile-big {
+        font-size: 8px;
+    }
+    @include media-mobile-small {
+        font-size: 7px;
+    }
 }
 
 body {

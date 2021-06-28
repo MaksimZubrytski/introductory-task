@@ -16,6 +16,18 @@ html {
   font-size: 10px;
 }
 
+@media (max-width: 640px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 7px;
+  }
+}
+
 body {
   font-size: 1.6rem;
   font-style: normal;
@@ -204,6 +216,12 @@ ul {
   }
 }
 
+@media (max-width: 320px) {
+  .header {
+    padding: 44px 10px 17px;
+  }
+}
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -291,6 +309,12 @@ ul {
   }
 }
 
+@media (max-width: 320px) {
+  .footer {
+    padding: 50px 10px 45px;
+  }
+}
+
 .footer__title {
   max-width: 280px;
 }
@@ -364,6 +388,12 @@ ul {
 @media (max-width: 1200px) {
   .superpowers {
     padding: 60px 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .superpowers {
+    padding: 30px 10px;
   }
 }
 
@@ -445,6 +475,12 @@ ul {
   }
 }
 
+@media (max-width: 320px) {
+  .tools {
+    padding: 30px 10px 45px;
+  }
+}
+
 .tools__wrapper {
   display: flex;
   align-items: center;
@@ -485,6 +521,12 @@ ul {
 @media (max-width: 1200px) {
   .professionals {
     padding: 120px 20px 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .professionals {
+    padding: 50px 10px 25px;
   }
 }
 
@@ -552,6 +594,12 @@ ul {
   }
 }
 
+@media (max-width: 320px) {
+  .product-managers {
+    padding: 25px 10px 25px;
+  }
+}
+
 .product-managers__wrapper {
   display: flex;
   justify-content: space-between;
@@ -616,6 +664,12 @@ ul {
   }
 }
 
+@media (max-width: 320px) {
+  .marketers {
+    padding: 25px 10px 25px;
+  }
+}
+
 .marketers__wrapper {
   display: flex;
   justify-content: space-between;
@@ -673,6 +727,12 @@ ul {
 @media (max-width: 1200px) {
   .strategies {
     padding: 50px 20px 120px;
+  }
+}
+
+@media (max-width: 320px) {
+  .strategies {
+    padding: 25px 10px 50px;
   }
 }
 

@@ -3,6 +3,9 @@
     @include media-small-desktop {
         padding: 120px 20px 50px;
     }
+    @include media-mobile-small {
+        padding: 50px 10px 25px;
+    }
 }
 
 .professionals__wrapper {

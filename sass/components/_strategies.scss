@@ -4,6 +4,9 @@
     @include media-small-desktop {
         padding: 50px 20px 120px;
     }
+    @include media-mobile-small {
+        padding: 25px 10px 50px;
+    }
 }
 
 .strategies__text {

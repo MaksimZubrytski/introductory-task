@@ -3,6 +3,9 @@
     @include media-small-desktop {
         padding: 50px 20px 50px;
     }
+    @include media-mobile-small {
+        padding: 25px 10px 25px;
+    }
 }
 
 .product-managers__wrapper {
