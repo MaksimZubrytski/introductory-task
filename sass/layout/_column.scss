@@ -10,6 +10,12 @@
             flex-basis: 45%;
         }
     }
+    @include media-mobile-big {
+        justify-content: center;
+        >* {
+            flex-basis: 90%;
+        }
+    }
 }
 
 .layout-3-column {

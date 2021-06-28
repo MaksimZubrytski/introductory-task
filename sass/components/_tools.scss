@@ -17,6 +17,14 @@
     text-align: center;
 }
 
+.tool {
+    @include media-mobile-big {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .tool__title {
     margin-top: 30px;
 }

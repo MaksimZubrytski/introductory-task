@@ -12,6 +12,9 @@
 
 .article__image {
     margin-top: 55px;
+    @include media-mobile-big {
+        max-width: 300px;
+    }
 }
 
 .article__info {
