@@ -8,6 +8,10 @@
 .professionals__wrapper {
     display: flex;
     justify-content: space-between;
+    @include media-tablet {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .professionals__title {
@@ -35,4 +39,13 @@
 .professionals__item {
     margin-top: 12px;
     max-width: 486px;
+}
+
+.professionals__img {
+    max-width: 520px;
+    max-height: 573px;
+    @include media-tablet {
+        margin-top: 30px;
+        max-height: 300px;
+    }
 }

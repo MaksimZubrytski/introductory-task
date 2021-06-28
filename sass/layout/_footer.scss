@@ -7,6 +7,9 @@
 
 .footer__title {
     max-width: 280px;
+    @include media-tablet {
+        margin-top: 20px;
+    }
 }
 
 .footer__list {

@@ -5,6 +5,11 @@
     >* {
         flex-basis: 21%;
     }
+    @include media-tablet {
+        >* {
+            flex-basis: 45%;
+        }
+    }
 }
 
 .layout-3-column {
@@ -13,5 +18,11 @@
     flex-wrap: wrap;
     >* {
         flex-basis: 30%;
+    }
+    @include media-tablet {
+        justify-content: center;
+        >* {
+            flex-basis: 55%;
+        }
     }
 }

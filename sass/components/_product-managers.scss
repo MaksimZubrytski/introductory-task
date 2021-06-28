@@ -8,6 +8,10 @@
 .product-managers__wrapper {
     display: flex;
     justify-content: space-between;
+    @include media-tablet {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 .product-managers__container {
@@ -31,4 +35,11 @@
     max-width: 365px;
     @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
     color: $text-color;
+}
+
+.product-managers__img {
+    @include media-tablet {
+        margin-top: 40px;
+        max-height: 300px;
+    }
 }
