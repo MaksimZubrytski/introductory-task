@@ -1,66 +1,66 @@
 .strategies {
-    padding: 50px 0 120px;
-    border-bottom: 1px solid #bcd0e57f;
-    @include media-small-desktop {
-        padding: 50px 20px 120px;
-    }
-    @include media-mobile-small {
-        padding: 25px 10px 50px;
-    }
+  padding: 50px 0 120px;
+  border-bottom: 1px solid #bcd0e57f;
+  @include media-small-desktop {
+    padding: 50px 20px 120px;
+  }
+  @include media-mobile-small {
+    padding: 25px 10px 50px;
+  }
 }
 
 .strategies__text {
-    margin-top: 9px;
+  margin-top: 9px;
 }
 
 .article__image {
-    margin-top: 55px;
-    @include media-mobile-big {
-        max-width: 300px;
-    }
+  margin-top: 55px;
+  @include media-mobile-big {
+    max-width: 300px;
+  }
 }
 
 .article__info {
-    @extend %additional-font;
-    display: inline-block;
-    margin-top: 25px;
-    @include font($size: 1.6rem, $height: 2.8rem, $weight: 400);
-    color: $text-color;
+  @extend %additional-font;
+  display: inline-block;
+  margin-top: 25px;
+  @include font($size: 1.6rem, $height: 2.8rem, $weight: 400);
+  color: $text-color;
 }
 
 .article__title {
-    margin-top: 12px;
-    width: 294px;
+  margin-top: 12px;
+  width: 294px;
 }
 
 .article__link {
-    cursor: pointer;
-    color: $text-color;
+  cursor: pointer;
+  color: $text-color;
 }
 
 .article__link:hover {
-    color: $additional-color;
-    transition: all 0.3s ease-in-out;
+  color: $additional-color;
+  transition: all 0.3s ease-in-out;
 }
 
 .strategies__list {
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
 }
 
 .strategies__item:nth-child(1n + 2) {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .strategies__item {
-    cursor: pointer;
-    width: 16px;
-    height: 16px;
-    background-color: #EFEFEF;
-    border-radius: 50%;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background-color: #efefef;
+  border-radius: 50%;
 }
 
 .strategies__item_active {
-    background-color: $additional-color;
+  background-color: $additional-color;
 }

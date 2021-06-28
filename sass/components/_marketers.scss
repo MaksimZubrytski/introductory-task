@@ -1,52 +1,52 @@
 .marketers {
-    padding: 50px 0 50px;
-    @include media-small-desktop {
-        padding: 50px 20px 50px;
-    }
-    @include media-mobile-small {
-        padding: 25px 10px 25px;
-    }
+  padding: 50px 0 50px;
+  @include media-small-desktop {
+    padding: 50px 20px 50px;
+  }
+  @include media-mobile-small {
+    padding: 25px 10px 25px;
+  }
 }
 
 .marketers__wrapper {
-    display: flex;
-    justify-content: space-between;
-    @include media-tablet {
-        flex-direction: column;
-        align-items: center;
-    }
+  display: flex;
+  justify-content: space-between;
+  @include media-tablet {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .marketers__title {
-    margin-top: 3px;
+  margin-top: 3px;
 }
 
 .marketers__subtitle {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .marketers__container {
-    margin-top: 26px;
+  margin-top: 26px;
 }
 
 .marketers__text:nth-child(1) {
-    @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
-    color: $text-color;
+  @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+  color: $text-color;
 }
 
 .marketers__text {
-    max-width: 486px;
-    margin-top: 22px;
+  max-width: 486px;
+  margin-top: 22px;
 }
 
 .marketers__item {
-    margin-top: 12px;
-    max-width: 486px;
+  margin-top: 12px;
+  max-width: 486px;
 }
 
 .marketers__img {
-    @include media-tablet {
-        margin-top: 40px;
-        max-height: 300px;
-    }
+  @include media-tablet {
+    margin-top: 40px;
+    max-height: 300px;
+  }
 }

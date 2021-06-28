@@ -1,43 +1,43 @@
 .tools {
-    padding: 60px 0 90px;
-    background: url(./../../assets/img/tools/background.svg) center bottom no-repeat;
-    @include media-small-desktop {
-        padding: 60px 20px 90px;
-    }
-    @include media-mobile-small {
-        padding: 30px 10px 45px;
-    }
+  padding: 60px 0 90px;
+  background: url(../assets/img/tools/background.svg) center bottom no-repeat;
+  @include media-small-desktop {
+    padding: 60px 20px 90px;
+  }
+  @include media-mobile-small {
+    padding: 30px 10px 45px;
+  }
 }
 
 .tools__wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .tools__title {
-    max-width: 539px;
-    text-align: center;
+  max-width: 539px;
+  text-align: center;
 }
 
 .tool {
-    @include media-mobile-big {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  @include media-mobile-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .tool__title {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .tool__text {
-    margin-top: 13px;
+  margin-top: 13px;
 }
 
 .tools__button {
-    margin-top: 34px;
-    padding: 15px 34px;
-    font-weight: 700;
+  margin-top: 34px;
+  padding: 15px 34px;
+  font-weight: 700;
 }

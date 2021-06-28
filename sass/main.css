@@ -1,9 +1,9 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h6, .article__info {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -120,19 +120,19 @@ ul {
 }
 
 .ico-cursor {
-  background: url(./../../assets/icons/cursor.svg) center center no-repeat;
+  background: url(../assets/icons/cursor.svg) center center no-repeat;
 }
 
 .ico-surveys {
-  background: url(./../../assets/icons/surveys.svg) center center no-repeat;
+  background: url(../assets/icons/surveys.svg) center center no-repeat;
 }
 
 .ico-heard {
-  background: url(./../../assets/icons/heard.svg) center center no-repeat;
+  background: url(../assets/icons/heard.svg) center center no-repeat;
 }
 
 .ico-clock {
-  background: url(./../../assets/icons/clock.svg) center center no-repeat;
+  background: url(../assets/icons/clock.svg) center center no-repeat;
 }
 
 .ico-check {
@@ -141,7 +141,7 @@ ul {
   top: calc(50% - 17.5px);
   width: 35px;
   height: 35px;
-  background: url(./../../assets/icons/check.svg) center center no-repeat;
+  background: url(../assets/icons/check.svg) center center no-repeat;
 }
 
 .button {
@@ -378,7 +378,7 @@ ul {
 .logo__ico {
   width: 100%;
   height: 100%;
-  background: url(../../assets/icons/logo.svg) center center;
+  background: url(../assets/icons/logo.svg) center center;
 }
 
 .superpowers {
@@ -469,7 +469,7 @@ ul {
 
 .tools {
   padding: 60px 0 90px;
-  background: url(./../../assets/img/tools/background.svg) center bottom no-repeat;
+  background: url(../assets/img/tools/background.svg) center bottom no-repeat;
 }
 
 @media (max-width: 1200px) {
@@ -792,7 +792,7 @@ ul {
   cursor: pointer;
   width: 16px;
   height: 16px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   border-radius: 50%;
 }
 
