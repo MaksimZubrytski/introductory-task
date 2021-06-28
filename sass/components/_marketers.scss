@@ -1,35 +1,35 @@
-.professionals {
-    padding: 120px 0 50px;
+.marketers {
+    padding: 50px 0 50px;
 }
 
-.professionals__wrapper {
+.marketers__wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.professionals__title {
+.marketers__title {
     margin-top: 3px;
 }
 
-.professionals__subtitle {
+.marketers__subtitle {
     margin-top: 30px;
 }
 
-.professionals__container {
+.marketers__container {
     margin-top: 26px;
 }
 
-.professionals__text:nth-child(1) {
+.marketers__text:nth-child(1) {
     @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
     color: $text-color;
 }
 
-.professionals__text {
+.marketers__text {
     max-width: 486px;
     margin-top: 22px;
 }
 
-.professionals__item {
+.marketers__item {
     margin-top: 12px;
     max-width: 486px;
 }

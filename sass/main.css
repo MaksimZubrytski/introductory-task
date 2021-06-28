@@ -290,10 +290,6 @@ ul {
   margin-top: 30px;
 }
 
-.professionals__text {
-  max-width: 486px;
-}
-
 .professionals__container {
   margin-top: 26px;
 }
@@ -307,6 +303,7 @@ ul {
 }
 
 .professionals__text {
+  max-width: 486px;
   margin-top: 22px;
 }
 
@@ -351,5 +348,44 @@ ul {
   font-weight: 500;
   line-height: 2.6rem;
   color: #544837;
+}
+
+.marketers {
+  padding: 50px 0 50px;
+}
+
+.marketers__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.marketers__title {
+  margin-top: 3px;
+}
+
+.marketers__subtitle {
+  margin-top: 30px;
+}
+
+.marketers__container {
+  margin-top: 26px;
+}
+
+.marketers__text:nth-child(1) {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.6rem;
+  color: #544837;
+}
+
+.marketers__text {
+  max-width: 486px;
+  margin-top: 22px;
+}
+
+.marketers__item {
+  margin-top: 12px;
+  max-width: 486px;
 }
 /*# sourceMappingURL=main.css.map */
