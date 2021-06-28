@@ -1,0 +1,41 @@
+.superpowers {
+    padding: 60px 0;
+}
+
+.superpowers__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.superpowers__title {
+    margin-top: 83px;
+    max-width: 518px;
+}
+
+.superpowers__text {
+    margin-top: 30px;
+    max-width: 458px;
+    @include font($size: 1.8rem, $height: 2.8rem);
+}
+
+.superpowers__buttons {
+    margin-top: 45px;
+}
+
+.superpowers__button {
+    font-weight: bold;
+    padding: 15px 41px;
+}
+
+.superpowers__button_transparent {
+    position: relative;
+    background-color: $light-color;
+    color: $additional-color;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.superpowers__img {
+    width: 605px;
+    height: 496px;
+}

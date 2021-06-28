@@ -19,6 +19,18 @@ body {
   line-height: 2.6rem;
 }
 
+h1 {
+  font-size: 4.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 5.4rem;
+  color: #2f281e;
+}
+
+p {
+  color: #544837;
+}
+
 a {
   text-decoration: none;
 }
@@ -30,6 +42,15 @@ ul {
 .ico {
   cursor: pointer;
   display: inline-block;
+}
+
+.triangle-ico {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 12px;
+  width: 20px;
+  height: 17px;
+  background: url(./../../assets/icons/triangle.svg) center center no-repeat;
 }
 
 .button {
@@ -110,5 +131,50 @@ ul {
   width: 100%;
   height: 100%;
   background: url(../../assets/icons/logo.svg) center center;
+}
+
+.superpowers {
+  padding: 60px 0;
+}
+
+.superpowers__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.superpowers__title {
+  margin-top: 83px;
+  max-width: 518px;
+}
+
+.superpowers__text {
+  margin-top: 30px;
+  max-width: 458px;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.8rem;
+}
+
+.superpowers__buttons {
+  margin-top: 45px;
+}
+
+.superpowers__button {
+  font-weight: bold;
+  padding: 15px 41px;
+}
+
+.superpowers__button_transparent {
+  position: relative;
+  background-color: #ffffff;
+  color: #ff9900;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.superpowers__img {
+  width: 605px;
+  height: 496px;
 }
 /*# sourceMappingURL=main.css.map */
