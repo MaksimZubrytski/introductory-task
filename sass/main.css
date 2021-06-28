@@ -2,7 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-h6, .article__info {
+h6 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -110,7 +110,7 @@ ul {
   left: 12px;
   width: 20px;
   height: 17px;
-  background: url(./../../assets/icons/triangle.svg) center center no-repeat;
+  background: url(../assets/icons/triangle.svg) center center no-repeat;
 }
 
 .tool__ico {

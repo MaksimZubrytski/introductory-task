@@ -21,7 +21,6 @@
 }
 
 .article__info {
-  @extend %additional-font;
   display: inline-block;
   margin-top: 25px;
   @include font($size: 1.6rem, $height: 2.8rem, $weight: 400);
