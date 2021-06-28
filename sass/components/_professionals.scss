@@ -1,0 +1,34 @@
+.professionals {
+    padding: 120px 0 50px;
+}
+
+.professionals__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.professionals__title {
+    margin-top: 3px;
+}
+
+.professionals__subtitle {
+    margin-top: 30px;
+}
+
+.professionals__text {
+    max-width: 486px;
+}
+
+.professionals__text:nth-child(1) {
+    margin-top: 26px;
+    @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+    color: $text-color;
+}
+
+.professionals__text {
+    margin-top: 22px;
+}
+
+.professionals__item {
+    margin-top: 12px;
+}

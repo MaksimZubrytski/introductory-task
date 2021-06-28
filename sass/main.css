@@ -27,6 +27,30 @@ h1 {
   color: #2f281e;
 }
 
+h2 {
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 5.4rem;
+  color: #2f281e;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.3rem;
+  color: #2f281e;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: #2f281e;
+}
+
 p {
   color: #544837;
 }
@@ -53,6 +77,28 @@ ul {
   background: url(./../../assets/icons/triangle.svg) center center no-repeat;
 }
 
+.tool__ico {
+  margin-top: 54px;
+  width: 50px;
+  height: 50px;
+}
+
+.ico-cursor {
+  background: url(./../../assets/icons/cursor.svg) center center no-repeat;
+}
+
+.ico-surveys {
+  background: url(./../../assets/icons/surveys.svg) center center no-repeat;
+}
+
+.ico-heard {
+  background: url(./../../assets/icons/heard.svg) center center no-repeat;
+}
+
+.ico-clock {
+  background: url(./../../assets/icons/clock.svg) center center no-repeat;
+}
+
 .button {
   box-sizing: border-box;
   border-radius: 4px;
@@ -64,6 +110,16 @@ ul {
   line-height: 2.4rem;
   border: none;
   cursor: pointer;
+}
+
+.layout-4-column {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.layout-4-column > * {
+  flex-basis: 21%;
 }
 
 .wrapper {
@@ -176,5 +232,82 @@ ul {
 .superpowers__img {
   width: 605px;
   height: 496px;
+}
+
+.tools {
+  padding: 60px 0 90px;
+  background: url(./../../assets/img/tools/background.svg) center bottom no-repeat;
+}
+
+.tools__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tools__title {
+  max-width: 539px;
+  text-align: center;
+}
+
+.tool__title {
+  margin-top: 30px;
+}
+
+.tool__text {
+  margin-top: 13px;
+}
+
+.tools__button {
+  margin-top: 34px;
+  padding: 15px 34px;
+  font-weight: 700;
+}
+
+.professionals {
+  padding: 120px 0 50px;
+}
+
+.professionals__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.professionals__title {
+  margin-top: 3px;
+}
+
+.professionals__subtitle {
+  margin-top: 30px;
+}
+
+.professionals__text {
+  max-width: 486px;
+}
+
+.professionals__text:nth-child(1) {
+  margin-top: 26px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.6rem;
+  color: #544837;
+}
+
+.professionals__text {
+  margin-top: 22px;
+}
+
+.professionals__item {
+  margin-top: 12px;
+}
+
+.product-managers {
+  padding: 50px 0 50px;
+}
+
+.product-managers__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

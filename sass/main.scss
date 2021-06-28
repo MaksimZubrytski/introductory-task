@@ -9,9 +9,13 @@
 @import './base/buttons';
 
 //layouts
+@import './layout/column';
 @import './layout/wrapper';
 @import './layout/header';
 
 //components
 @import './components/logo';
 @import './components/superpowers';
+@import './components/tools';
+@import './components/professionals';
+@import './components/product-managers';
