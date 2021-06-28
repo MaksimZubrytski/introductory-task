@@ -40,7 +40,10 @@
     padding: 15px 41px;
 }
 
-.superpowers__button_transparent {
+.superpowers__link {
+    display: inline-block;
+    font-weight: bold;
+    padding: 15px 41px;
     position: relative;
     background-color: $light-color;
     color: $additional-color;
