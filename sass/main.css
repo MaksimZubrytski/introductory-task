@@ -51,6 +51,14 @@ h4 {
   color: #2f281e;
 }
 
+h5 {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.4rem;
+  color: #2f281e;
+}
+
 p {
   color: #544837;
 }
@@ -61,6 +69,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 .ico {
@@ -129,6 +141,16 @@ ul {
 
 .layout-4-column > * {
   flex-basis: 21%;
+}
+
+.layout-3-column {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.layout-3-column > * {
+  flex-basis: 30%;
 }
 
 .wrapper {
@@ -387,5 +409,43 @@ ul {
 .marketers__item {
   margin-top: 12px;
   max-width: 486px;
+}
+
+.strategies {
+  padding: 50px 0 120px;
+  border-bottom: 1px solid #BCD0E57F;
+}
+
+.strategies__text {
+  margin-top: 9px;
+}
+
+.strategies__container {
+  margin-top: 55px;
+}
+
+.article__info {
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: #544837;
+}
+
+.article__title {
+  margin-top: 12px;
+  width: 294px;
+}
+
+.article__link {
+  cursor: pointer;
+  color: #544837;
+}
+
+.article__link:hover {
+  color: #ff9900;
+  transition: all 0.3s ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */

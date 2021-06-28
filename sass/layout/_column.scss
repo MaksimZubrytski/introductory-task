@@ -6,3 +6,12 @@
         flex-basis: 21%;
     }
 }
+
+.layout-3-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >* {
+        flex-basis: 30%;
+    }
+}

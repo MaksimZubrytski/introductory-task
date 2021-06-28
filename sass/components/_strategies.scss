@@ -1,0 +1,35 @@
+.strategies {
+    padding: 50px 0 120px;
+    border-bottom: 1px solid #BCD0E57F;
+}
+
+.strategies__text {
+    margin-top: 9px;
+}
+
+.strategies__container {
+    margin-top: 55px;
+}
+
+.article__info {
+    display: inline-block;
+    margin-top: 25px;
+    @include font($size: 1.6rem, $height: 2.8rem, $weight: 400);
+    color: $text-color;
+}
+
+.article__title {
+    margin-top: 12px;
+    width: 294px;
+
+}
+
+.article__link {
+    cursor: pointer;
+    color: $text-color
+}
+
+.article__link:hover {
+    color: $additional-color;
+    transition: all 0.3s ease-in-out;
+}
