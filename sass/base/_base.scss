@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    @extend %main-font;
+    @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
