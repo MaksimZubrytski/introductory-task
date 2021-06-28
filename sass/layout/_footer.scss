@@ -1,0 +1,39 @@
+.footer {
+    padding: 102px 0 95px;
+}
+
+.footer__title {
+    max-width: 280px;
+}
+
+.footer__list {
+    margin-top: 35px;
+}
+
+.footer__item:nth-child(1n + 2) {
+    margin-top: 10px;
+}
+
+.footer__link {
+    @include font($size: 1.6rem, $height: 3.5rem, $weight: 400);
+    color: $text-color;
+}
+
+.footer__input {
+    width: 325px;
+    margin-top: 34px;
+    padding: 10px 15px;
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+}
+
+.footer__input::placeholder {
+    @include font($size: 1.6rem, $height: 2.8rem, $weight: 600);
+    color: #bcd0e5;
+}
+
+.footer__button {
+    font-weight: bold;
+    margin-top: 21px;
+    padding: 8px 15px;
+}

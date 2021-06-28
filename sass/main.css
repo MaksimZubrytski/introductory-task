@@ -2,6 +2,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+h6, .article__info {
+  font-family: 'Roboto', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,6 +60,14 @@ h5 {
   font-style: normal;
   font-weight: 700;
   line-height: 3.4rem;
+  color: #2f281e;
+}
+
+h6 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
   color: #2f281e;
 }
 
@@ -206,6 +218,52 @@ ul {
   background-color: #ffffff;
   border: 1px solid #BCD0E5;
   color: #173A56;
+}
+
+.footer {
+  padding: 102px 0 95px;
+}
+
+.footer__title {
+  max-width: 280px;
+}
+
+.footer__list {
+  margin-top: 35px;
+}
+
+.footer__item:nth-child(1n + 2) {
+  margin-top: 10px;
+}
+
+.footer__link {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.5rem;
+  color: #544837;
+}
+
+.footer__input {
+  width: 325px;
+  margin-top: 34px;
+  padding: 10px 15px;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+}
+
+.footer__input::placeholder {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.8rem;
+  color: #bcd0e5;
+}
+
+.footer__button {
+  font-weight: bold;
+  margin-top: 21px;
+  padding: 8px 15px;
 }
 
 .logo__link {
@@ -413,7 +471,7 @@ ul {
 
 .strategies {
   padding: 50px 0 120px;
-  border-bottom: 1px solid #BCD0E57F;
+  border-bottom: 1px solid #bcd0e57f;
 }
 
 .strategies__text {
@@ -447,5 +505,27 @@ ul {
 .article__link:hover {
   color: #ff9900;
   transition: all 0.3s ease-in-out;
+}
+
+.strategies__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.strategies__item:nth-child(1n + 2) {
+  margin-left: 10px;
+}
+
+.strategies__item {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background-color: #EFEFEF;
+  border-radius: 50%;
+}
+
+.strategies__item_active {
+  background-color: #ff9900;
 }
 /*# sourceMappingURL=main.css.map */

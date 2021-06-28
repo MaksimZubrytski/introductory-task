@@ -1,6 +1,6 @@
 .strategies {
     padding: 50px 0 120px;
-    border-bottom: 1px solid #BCD0E57F;
+    border-bottom: 1px solid #bcd0e57f;
 }
 
 .strategies__text {
@@ -12,6 +12,7 @@
 }
 
 .article__info {
+    @extend %additional-font;
     display: inline-block;
     margin-top: 25px;
     @include font($size: 1.6rem, $height: 2.8rem, $weight: 400);
@@ -21,15 +22,36 @@
 .article__title {
     margin-top: 12px;
     width: 294px;
-
 }
 
 .article__link {
     cursor: pointer;
-    color: $text-color
+    color: $text-color;
 }
 
 .article__link:hover {
     color: $additional-color;
     transition: all 0.3s ease-in-out;
+}
+
+.strategies__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.strategies__item:nth-child(1n + 2) {
+    margin-left: 10px;
+}
+
+.strategies__item {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+}
+
+.strategies__item_active {
+    background-color: $additional-color;
 }
