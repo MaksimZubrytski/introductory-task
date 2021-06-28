@@ -1,6 +1,9 @@
 .tools {
     padding: 60px 0 90px;
     background: url(./../../assets/img/tools/background.svg) center bottom no-repeat;
+    @include media-small-desktop {
+        padding: 60px 20px 90px;
+    }
 }
 
 .tools__wrapper {

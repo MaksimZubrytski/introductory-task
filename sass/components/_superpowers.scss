@@ -1,5 +1,8 @@
 .superpowers {
     padding: 60px 0;
+    @include media-small-desktop {
+        padding: 60px 20px;
+    }
 }
 
 .superpowers__wrapper {

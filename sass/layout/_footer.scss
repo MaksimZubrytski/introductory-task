@@ -1,5 +1,8 @@
 .footer {
     padding: 102px 0 95px;
+    @include media-small-desktop {
+        padding: 102px 20px 95px;
+    }
 }
 
 .footer__title {

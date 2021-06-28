@@ -1,6 +1,9 @@
 .strategies {
     padding: 50px 0 120px;
     border-bottom: 1px solid #bcd0e57f;
+    @include media-small-desktop {
+        padding: 50px 20px 120px;
+    }
 }
 
 .strategies__text {
