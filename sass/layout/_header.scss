@@ -33,6 +33,11 @@
 .navigation__link {
     @include font($size: 1.4rem, $height: 2.8rem);
     color: $link-color;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation__link:hover {
+    color: $additional-color;
 }
 
 .header__buttons {
@@ -48,10 +53,21 @@
     margin-left: 14px;
 }
 
+.header__button:nth-child(2):hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #173A56;
+}
+
+
 .header__button_transparent {
     background-color: $light-color;
     border: 1px solid #BCD0E5;
     color: #173A56;
+    transition: all 0.3s ease-in-out;
+}
+
+.header__button_transparent:hover {
+    background-color: $additional-color;
 }
 
 .hamburger {

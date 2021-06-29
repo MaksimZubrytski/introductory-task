@@ -26,6 +26,11 @@
 .footer__link {
     @include font($size: 1.6rem, $height: 3.5rem, $weight: 400);
     color: $text-color;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__link:hover {
+    color: $additional-color;
 }
 
 .footer__input {
