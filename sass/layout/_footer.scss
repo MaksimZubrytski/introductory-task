@@ -10,6 +10,7 @@
 
 .footer__title {
     max-width: 280px;
+    @extend %additional-font;
     @include media-tablet {
         margin-top: 20px;
     }

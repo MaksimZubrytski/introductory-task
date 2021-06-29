@@ -18,6 +18,7 @@
 }
 
 .superpowers__title {
+  color: $title-color;
   margin-top: 83px;
   max-width: 518px;
   @include media-tablet {
