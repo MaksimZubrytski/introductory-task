@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1112px;
 }
 
 .header__container {
@@ -50,7 +51,7 @@
 }
 
 .header__button:nth-child(2) {
-    margin-left: 14px;
+    margin-left: 8px;
 }
 
 .header__button:nth-child(2):hover {
