@@ -448,6 +448,12 @@ ul {
   font-weight: bold;
   margin-top: 21px;
   padding: 8px 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__button:hover {
+  background-color: #173A56;
 }
 
 .logo__link {
@@ -526,6 +532,12 @@ ul {
 .superpowers__button {
   font-weight: bold;
   padding: 15px 41px;
+}
+
+.superpowers__button:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #173A56;
 }
 
 .superpowers__link {
@@ -619,6 +631,12 @@ ul {
   margin-top: 34px;
   padding: 15px 34px;
   font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tools__button:hover {
+  background-color: #173A56;
 }
 
 .professionals {

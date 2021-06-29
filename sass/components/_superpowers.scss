@@ -40,6 +40,11 @@
   padding: 15px 41px;
 }
 
+.superpowers__button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: $hover-color;
+}
+
 .superpowers__link {
   display: inline-block;
   font-weight: bold;
