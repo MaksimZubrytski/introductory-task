@@ -52,6 +52,9 @@
     max-width: 542px;
     max-height: 609px;
     margin-top: 15px;
+    @include media-small-desktop {
+      max-height: 500px;
+    }
     @include media-tablet {
       margin-top: 40px;
       max-height: 300px;

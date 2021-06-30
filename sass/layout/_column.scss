@@ -6,8 +6,9 @@
         flex-basis: 22%;
     }
     @include media-tablet {
+        justify-content: space-around;
         >* {
-            flex-basis: 45%;
+            flex-basis: 40%;
         }
     }
     @include media-mobile-big {

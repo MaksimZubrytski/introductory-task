@@ -32,6 +32,9 @@
 
 .footer__container:nth-child(1) {
     margin-left: 140px;
+    @include media-tablet {
+        margin-left: 21px;
+      }
     @include media-mobile-big {
         margin-left: 0;
     }
@@ -67,6 +70,12 @@
 .footer__list {
     padding: 0;
     margin-top: 35px;
+    @include media-tablet {
+        margin-top: 20px;
+    }
+    @include media-mobile-big {
+        margin-top: 15px;
+    }
 }
 
 .footer__link {

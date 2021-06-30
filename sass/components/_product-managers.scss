@@ -56,6 +56,11 @@
 }
 
 .product-managers__img {
+  max-width: 532px;
+  max-height: 520px;
+  @include media-small-desktop {
+    max-height: 450px;
+  }
   @include media-tablet {
     margin-top: 40px;
     max-height: 300px;

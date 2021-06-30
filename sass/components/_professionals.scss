@@ -49,6 +49,9 @@
   &__img {
     max-width: 520px;
     max-height: 573px;
+    @include media-small-desktop {
+      max-height: 450px;
+    }
     @include media-tablet {
       margin-top: 30px;
       max-height: 300px;

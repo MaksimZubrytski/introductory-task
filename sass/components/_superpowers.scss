@@ -60,6 +60,9 @@
 .superpowers__img {
   max-width: 605px;
   max-height: 496px;
+  @include media-small-desktop {
+    max-height: 400px;
+  }
   @include media-tablet {
     margin-top: 40px;
     max-height: 300px;
