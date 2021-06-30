@@ -1,5 +1,5 @@
 .tools {
-  padding: 60px 0 90px;
+  padding: 48px 0 90px;
   background: url(../assets/img/tools/background.svg) center bottom no-repeat;
   @include media-small-desktop {
     padding: 60px 20px 90px;
@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  max-width: 1095px;
 }
 
 .tools__title {
@@ -29,7 +30,8 @@
 }
 
 .tool__title {
-  margin-top: 30px;
+  margin-top: 26px;
+  margin-bottom: 0;
 }
 
 .tool__text {
@@ -37,7 +39,7 @@
 }
 
 .tools__button {
-  margin-top: 34px;
+  margin-top: 15px;
   padding: 15px 34px;
   font-weight: 700;
   transition: all 0.3s ease-in-out;
