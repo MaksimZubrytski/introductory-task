@@ -11,6 +11,7 @@
 .product-managers__wrapper {
   display: flex;
   justify-content: space-between;
+  max-width: 1121px;
   @include media-tablet {
     flex-direction: column-reverse;
     align-items: center;
@@ -19,6 +20,7 @@
 
 .product-managers__container {
   margin-top: 50px;
+  max-width: 486px;
 }
 
 .product-managers__text:nth-child(1) {
@@ -26,18 +28,31 @@
   color: $text-color;
 }
 
+.product-managers__title {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  max-width: 486px;
+}
+
 .product-managers__text {
   margin-top: 22px;
   max-width: 486px;
 }
 
+.product-managers__item:nth-child(1) {
+  max-width: 365px;
+}
+
 .product-managers__item {
   position: relative;
   margin-top: 30px;
-  padding-left: 65px;
-  max-width: 365px;
+  max-width: 385px;
   @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
   color: $text-color;
+}
+
+.product-managers__list {
+  padding-left: 65px;
 }
 
 .product-managers__img {
