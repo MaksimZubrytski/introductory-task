@@ -1,5 +1,5 @@
 .marketers {
-  padding: 50px 0 50px;
+  padding: 39px 0 50px;
   @include media-small-desktop {
     padding: 50px 20px 50px;
   }
@@ -11,6 +11,7 @@
 .marketers__wrapper {
   display: flex;
   justify-content: space-between;
+  max-width: 1110px;
   @include media-tablet {
     flex-direction: column;
     align-items: center;
@@ -19,10 +20,12 @@
 
 .marketers__title {
   margin-top: 3px;
+  margin-bottom: 0;
 }
 
 .marketers__subtitle {
   margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 .marketers__container {
@@ -30,6 +33,8 @@
 }
 
 .marketers__text:nth-child(1) {
+  display: inline-block;
+  margin-top: 28px;
   @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
   color: $text-color;
 }
@@ -40,11 +45,14 @@
 }
 
 .marketers__item {
-  margin-top: 12px;
+  margin-top: 8px;
   max-width: 486px;
 }
 
 .marketers__img {
+  max-width: 542px;
+  max-height: 609px;
+  margin-top: 15px;
   @include media-tablet {
     margin-top: 40px;
     max-height: 300px;
