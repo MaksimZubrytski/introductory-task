@@ -65,7 +65,7 @@
     margin-top: 40px;
     max-height: 300px;
   }
-  @include media-mobile-big {
+  @include media-mobile-large {
     max-height: 280px;
   }
 }

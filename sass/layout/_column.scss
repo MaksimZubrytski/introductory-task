@@ -11,7 +11,7 @@
             flex-basis: 40%;
         }
     }
-    @include media-mobile-big {
+    @include media-mobile-large {
         justify-content: center;
         >* {
             flex-basis: 90%;

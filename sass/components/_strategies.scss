@@ -25,7 +25,7 @@
 
 .article__image {
   margin-top: 43px;
-  @include media-mobile-big {
+  @include media-mobile-large {
     max-width: 300px;
   }
 }
