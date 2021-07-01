@@ -31,7 +31,7 @@
     margin-top: 23px;
   }
 
-  &__text:nth-child(1) {
+  &__text:first-child {
     @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
     color: $text-color;
   }

@@ -30,7 +30,7 @@
     }
 }
 
-.footer__container:nth-child(1) {
+.footer__container:first-child {
     margin-left: 140px;
     @include media-tablet {
         margin-left: 21px;

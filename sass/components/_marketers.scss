@@ -31,7 +31,7 @@
     margin-top: 26px;
   }
 
-  &__text:nth-child(1) {
+  &__text:first-child {
     display: inline-block;
     margin-top: 28px;
     @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);

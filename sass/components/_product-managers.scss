@@ -23,7 +23,7 @@
   max-width: 486px;
 }
 
-.product-managers__text:nth-child(1) {
+.product-managers__text:first-child {
   @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
   color: $text-color;
 }
@@ -39,7 +39,7 @@
   max-width: 486px;
 }
 
-.product-managers__item:nth-child(1) {
+.product-managers__item:first-child {
   max-width: 365px;
 }
 
