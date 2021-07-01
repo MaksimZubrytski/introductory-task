@@ -62,8 +62,8 @@
 
 .header__button_transparent {
     background-color: $light-color;
-    border: 1px solid #BCD0E5;
-    color: #173A56;
+    border: 1px solid $border-color;
+    color: $dark-blue-color;
     transition: all 0.3s ease-in-out;
 }
 
@@ -89,6 +89,6 @@
     background-color: $dark-color;
 }
 
-.hamburger__item:nth-child(1) {
+.hamburger__item:first-child {
     margin-top: 0;
 }
