@@ -1,6 +1,6 @@
 .strategies {
   padding: 50px 0 120px;
-  border-bottom: 1px solid #bcd0e57f;
+  border-bottom: 1px solid $opacity-border-color;
   @include media-small-desktop {
     padding: 50px 20px 120px;
   }
@@ -67,7 +67,7 @@
   cursor: pointer;
   width: 16px;
   height: 16px;
-  background-color: #efefef;
+  background-color: $gray-color;
   border-radius: 50%;
 }
 

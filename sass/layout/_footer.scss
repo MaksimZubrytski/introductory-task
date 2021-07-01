@@ -92,7 +92,7 @@
     width: 325px;
     margin-top: 34px;
     padding: 10px 15px;
-    border: 1px solid #bcd0e5;
+    border: 1px solid $border-color;
     border-radius: 4px;
     @include media-mobile-large {
         max-width: 280px;
