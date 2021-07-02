@@ -16,7 +16,8 @@
     "gulp-watch": "^5.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp sass-compile",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
