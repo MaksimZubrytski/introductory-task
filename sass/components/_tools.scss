@@ -43,8 +43,8 @@
   padding: 15px 34px;
   font-weight: 700;
   transition: all 0.3s ease-in-out;
-}
 
-.tools__button:hover {
-  background-color: $hover-color;
+  &:hover {
+    background-color: $hover-color;
+  }
 }

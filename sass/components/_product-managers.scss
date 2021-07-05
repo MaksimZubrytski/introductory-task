@@ -6,66 +6,66 @@
   @include media-mobile-small {
     padding: 25px 10px 25px;
   }
-}
 
-.product-managers__wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  @include media-tablet {
-    flex-direction: column-reverse;
-    align-items: center;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    @include media-tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
-}
 
-.product-managers__container {
-  margin-top: 50px;
-  max-width: 486px;
-}
-
-.product-managers__text:first-child {
-  @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
-  color: $text-color;
-}
-
-.product-managers__title {
-  margin-top: 4px;
-  margin-bottom: 0px;
-  max-width: 486px;
-}
-
-.product-managers__text {
-  margin-top: 22px;
-  max-width: 486px;
-}
-
-.product-managers__item:first-child {
-  max-width: 365px;
-}
-
-.product-managers__item {
-  position: relative;
-  margin-top: 30px;
-  max-width: 385px;
-  @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
-  color: $text-color;
-}
-
-.product-managers__list {
-  padding-left: 65px;
-}
-
-.product-managers__img {
-  max-width: 532px;
-  max-height: 520px;
-  @include media-small-desktop {
-    max-height: 450px;
+  &__container {
+    margin-top: 50px;
+    max-width: 486px;
   }
-  @include media-tablet {
-    margin-top: 40px;
-    max-height: 300px;
+  
+  &__text {
+    margin-top: 22px;
+    max-width: 486px;
+
+    &:first-child {
+      @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+      color: $text-color;
+    }
   }
-  @include media-mobile-large {
-    max-height: 280px;
+
+  &__title {
+    margin-top: 4px;
+    margin-bottom: 0px;
+    max-width: 486px;
+  }
+
+  &__list {
+    padding-left: 65px;
+  }
+
+  &__item {
+    position: relative;
+    margin-top: 30px;
+    max-width: 385px;
+    @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+    color: $text-color;
+
+    &:first-child {
+      max-width: 365px;
+    }
+  }
+
+  &__img {
+    max-width: 532px;
+    max-height: 520px;
+    @include media-small-desktop {
+      max-height: 450px;
+    }
+    @include media-tablet {
+      margin-top: 40px;
+      max-height: 300px;
+    }
+    @include media-mobile-large {
+      max-height: 280px;
+    }
   }
 }

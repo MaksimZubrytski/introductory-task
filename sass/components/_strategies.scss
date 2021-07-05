@@ -7,70 +7,74 @@
   @include media-mobile-small {
     padding: 25px 10px 50px;
   }
-}
 
-.strategies__wrapper {
-  padding: 0 10px;
-}
+  &__wrapper {
+    padding: 0 10px;
+  }
 
-.strategies__title {
-  margin-top: 32px;
-  margin-bottom: 0;
-  @include font($size: 3.4rem, $height: 5.1rem, $weight: bold);
-}
+  &__title {
+    margin-top: 32px;
+    margin-bottom: 0;
+    @include font($size: 3.4rem, $height: 5.1rem, $weight: bold);
+  }
 
-.strategies__text {
-  margin-top: 9px;
-}
+  &__text {
+    margin-top: 9px;
+  }
 
-.article__image {
-  margin-top: 40px;
-  @include media-mobile-large {
-    max-width: 300px;
+  &__list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  &__item {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    background-color: $gray-color;
+    border-radius: 50%;
+
+    &:nth-child(1n + 2) {
+      margin-left: 10px;
+    }
+
+    &.active {
+      background-color: $additional-color;
+    }
   }
 }
 
-.article__info {
-  display: inline-block;
-  margin-top: 19px;
-  @include font($size: 1.6rem, $height: 2.8rem, $weight: 400);
-  color: $text-color;
+.article {
+
+  &__image {
+    margin-top: 40px;
+    @include media-mobile-large {
+      max-width: 300px;
+    }
+  }
+
+  &__info {
+    display: inline-block;
+    margin-top: 19px;
+    @include font($size: 1.6rem, $height: 2.8rem, $weight: 400);
+    color: $text-color;
+  }
+
+  &__title {
+    margin-top: 12px;
+    width: 294px;
+  }
+
+  &__link {
+    cursor: pointer;
+    color: $text-color;
+
+    &:hover {
+      color: $additional-color;
+      transition: all 0.3s ease-in-out;
+    }
+  }
 }
 
-.article__title {
-  margin-top: 12px;
-  width: 294px;
-}
-
-.article__link {
-  cursor: pointer;
-  color: $text-color;
-}
-
-.article__link:hover {
-  color: $additional-color;
-  transition: all 0.3s ease-in-out;
-}
-
-.strategies__list {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin-top: 10px;
-}
-
-.strategies__item:nth-child(1n + 2) {
-  margin-left: 10px;
-}
-
-.strategies__item {
-  cursor: pointer;
-  width: 16px;
-  height: 16px;
-  background-color: $gray-color;
-  border-radius: 50%;
-}
-
-.strategies__item.active {
-  background-color: $additional-color;
-}

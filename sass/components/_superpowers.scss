@@ -6,68 +6,68 @@
   @include media-mobile-small {
     padding: 30px 10px;
   }
-}
 
-.superpowers__wrapper {
-  display: flex;
-  justify-content: space-between;
-  @include media-tablet {
-    flex-direction: column;
-    align-items: center;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include media-tablet {
+      flex-direction: column;
+      align-items: center;
+    }
   }
-}
 
-.superpowers__title {
-  color: $title-color;
-  margin-top: 83px;
-  max-width: 518px;
-  @include media-tablet {
-    margin-top: 23px;
+  &__title {
+    color: $title-color;
+    margin-top: 83px;
+    max-width: 518px;
+    @include media-tablet {
+      margin-top: 23px;
+    }
   }
-}
 
-.superpowers__text {
-  margin-top: 30px;
-  max-width: 458px;
-  @include font($size: 1.8rem, $height: 2.8rem);
-}
-
-.superpowers__buttons {
-  margin-top: 52px;
-}
-
-.superpowers__button {
-  font-weight: bold;
-  padding: 15px 41px;
-}
-
-.superpowers__button:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: $hover-color;
-}
-
-.superpowers__link {
-  display: inline-block;
-  font-weight: bold;
-  padding: 15px 50px;
-  position: relative;
-  background-color: $light-color;
-  color: $additional-color;
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.superpowers__img {
-  max-width: 605px;
-  max-height: 496px;
-  @include media-small-desktop {
-    max-height: 400px;
+  &__text {
+    margin-top: 30px;
+    max-width: 458px;
+    @include font($size: 1.8rem, $height: 2.8rem);
   }
-  @include media-tablet {
-    margin-top: 40px;
-    max-height: 300px;
+
+  &__buttons {
+    margin-top: 52px;
   }
-  @include media-mobile-large {
-    display: none;
+
+  &__button {
+    font-weight: bold;
+    padding: 15px 41px;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      background-color: $hover-color;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-weight: bold;
+    padding: 15px 50px;
+    position: relative;
+    background-color: $light-color;
+    color: $additional-color;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  &__img {
+    max-width: 605px;
+    max-height: 496px;
+    @include media-small-desktop {
+      max-height: 400px;
+    }
+    @include media-tablet {
+      margin-top: 40px;
+      max-height: 300px;
+    }
+    @include media-mobile-large {
+      display: none;
+    }
   }
 }
