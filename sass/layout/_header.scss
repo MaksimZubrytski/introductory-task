@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1112px;
+    padding: 0 12px 0 2px;
 }
 
 .header__container {
@@ -28,7 +28,7 @@
 }
 
 .navigation__item:nth-child(1n + 2) {
-    margin-left: 30px;
+    margin-left: 28px;
 }
 
 .navigation__link {

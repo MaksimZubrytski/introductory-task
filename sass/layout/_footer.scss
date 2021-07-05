@@ -1,5 +1,5 @@
 .footer {
-    padding: 85px 0 95px;
+    padding: 102px 0 95px;
     @include media-small-desktop {
         padding: 85px 20px 95px;
     }
@@ -10,6 +10,7 @@
 
 .footer__wrapper {
     display: flex;
+    padding: 0px 8px;
     @include media-tablet {
         flex-direction: column;
     }
@@ -91,7 +92,7 @@
 .footer__input {
     width: 325px;
     margin-top: 34px;
-    padding: 10px 15px;
+    padding: 12px 15px;
     border: 1px solid $border-color;
     border-radius: 4px;
     @include media-mobile-large {
@@ -106,7 +107,7 @@
 
 .footer__button {
     font-weight: bold;
-    margin-top: 26px;
+    margin-top: 22px;
     padding: 8px 15px;
     transition: all 0.3s ease-in-out;
 }

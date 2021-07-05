@@ -11,7 +11,7 @@
 .product-managers__wrapper {
   display: flex;
   justify-content: space-between;
-  max-width: 1121px;
+  padding: 0;
   @include media-tablet {
     flex-direction: column-reverse;
     align-items: center;

@@ -1,5 +1,5 @@
 .strategies {
-  padding: 50px 0 120px;
+  padding: 50px 0 106px;
   border-bottom: 1px solid $opacity-border-color;
   @include media-small-desktop {
     padding: 50px 20px 120px;
@@ -10,7 +10,7 @@
 }
 
 .strategies__wrapper {
-  max-width: 1107px;
+  padding: 0 10px;
 }
 
 .strategies__title {
@@ -24,7 +24,7 @@
 }
 
 .article__image {
-  margin-top: 43px;
+  margin-top: 40px;
   @include media-mobile-large {
     max-width: 300px;
   }

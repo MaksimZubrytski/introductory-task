@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 1095px;
+  padding: 0 18px;
 }
 
 .tools__title {
@@ -39,7 +39,7 @@
 }
 
 .tools__button {
-  margin-top: 15px;
+  margin-top: 18px;
   padding: 15px 34px;
   font-weight: 700;
   transition: all 0.3s ease-in-out;
