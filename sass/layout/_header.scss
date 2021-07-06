@@ -1,9 +1,9 @@
 .header {
   padding: 50px 0 10px;
-  @include media-small-desktop {
+  @include screen("small-desktop") {
     padding: 44px 20px 17px;
   }
-  @include media-mobile-small {
+  @include screen("mobile-small") {
     padding: 44px 10px 17px;
   }
 
@@ -17,7 +17,7 @@
   &__container {
     display: flex;
     align-items: center;
-    @include media-tablet {
+    @include screen("tablet") {
       display: none;
     }
   }
@@ -76,7 +76,7 @@
 
 .hamburger {
   display: none;
-  @include media-tablet {
+  @include screen("tablet") {
     display: inline-block;
   }
 

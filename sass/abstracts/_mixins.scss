@@ -5,26 +5,19 @@
   line-height: $height;
 }
 
-@mixin media-small-desktop {
-  @media (max-width: $screen-small-desktop) {
-    @content;
-  }
-}
+$breakpoints: (
+  "small-desktop": $screen-small-desktop,
+  "tablet": $screen-tablet-width,
+  "mobile-large": $screen-mobile-large-width,
+  "mobile-small": $screen-mobile-small-width,
+);
 
-@mixin media-tablet {
-  @media (max-width: $screen-tablet-width) {
-    @content;
-  }
-}
-
-@mixin media-mobile-large {
-  @media (max-width: $screen-mobile-large-width) {
-    @content;
-  }
-}
-
-@mixin media-mobile-small {
-  @media (max-width: $screen-mobile-small-width) {
-    @content;
+@mixin screen($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint `#{$breakpoint}` not found";
   }
 }

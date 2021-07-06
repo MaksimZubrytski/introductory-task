@@ -2,11 +2,11 @@
   padding: 50px 0 106px;
   border-bottom: 1px solid $border-opacity-color;
 
-  @include media-small-desktop {
+  @include screen("small-desktop") {
     padding: 50px 20px 120px;
   }
 
-  @include media-mobile-small {
+  @include screen("mobile-small") {
     padding: 25px 10px 50px;
   }
 
@@ -53,7 +53,7 @@
   &__image {
     margin-top: 40px;
 
-    @include media-mobile-large {
+    @include screen("mobile-large") {
       max-width: 300px;
     }
 

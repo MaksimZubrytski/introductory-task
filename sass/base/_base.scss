@@ -5,11 +5,11 @@
 html {
   font-size: 10px;
   
-  @include media-mobile-large {
+  @include screen("mobile-large") {
     font-size: 8px;
   }
 
-  @include media-mobile-small {
+  @include screen("mobile-small") {
     font-size: 7px;
   }
 }

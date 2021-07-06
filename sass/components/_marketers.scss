@@ -1,11 +1,11 @@
 .marketers {
   padding: 39px 0 50px;
-
-  @include media-small-desktop {
+  
+  @include screen("small-desktop") {
     padding: 50px 20px 50px;
   }
 
-  @include media-mobile-small {
+  @include screen("mobile-small") {
     padding: 25px 10px 25px;
   }
 
@@ -14,7 +14,7 @@
     justify-content: space-between;
     padding: 0px 6px;
 
-    @include media-tablet {
+    @include screen("tablet") {
       flex-direction: column;
       align-items: center;
     }
@@ -56,11 +56,11 @@
     max-height: 609px;
     margin-top: 15px;
 
-    @include media-small-desktop {
+    @include screen("small-desktop") {
       max-height: 500px;
     }
 
-    @include media-tablet {
+    @include screen("tablet") {
       margin-top: 40px;
       max-height: 300px;
     }

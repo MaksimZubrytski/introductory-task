@@ -1,11 +1,11 @@
 .product-managers {
   padding: 50px 0 50px;
-  
-  @include media-small-desktop {
+
+  @include screen("small-desktop") {
     padding: 50px 20px 50px;
   }
 
-  @include media-mobile-small {
+  @include screen("mobile-small") {
     padding: 25px 10px 25px;
   }
 
@@ -14,7 +14,7 @@
     justify-content: space-between;
     padding: 0;
 
-    @include media-tablet {
+    @include screen("tablet") {
       flex-direction: column-reverse;
       align-items: center;
     }
@@ -62,16 +62,16 @@
     max-width: 532px;
     max-height: 520px;
 
-    @include media-small-desktop {
+    @include screen("small-desktop") {
       max-height: 450px;
     }
 
-    @include media-tablet {
+    @include screen("tablet") {
       margin-top: 40px;
       max-height: 300px;
     }
 
-    @include media-mobile-large {
+    @include screen("mobile-large") {
       max-height: 280px;
     }
   }

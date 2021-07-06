@@ -5,13 +5,13 @@
     > .tool {
         flex-basis: 22%;
     }
-    @include media-tablet {
+    @include screen("tablet") {
         justify-content: space-around;
         > .tool {
             flex-basis: 40%;
         }
     }
-    @include media-mobile-large {
+    @include screen("mobile-large") {
         justify-content: center;
         > .tool {
             flex-basis: 90%;
@@ -26,7 +26,7 @@
     >.article {
         flex-basis: 31%;
     }
-    @include media-tablet {
+    @include screen("tablet") {
         justify-content: center;
         >.article {
             flex-basis: 55%;
