@@ -18,20 +18,12 @@
   height: 50px;
 }
 
-.icon-cursor {
-  background: url(../assets/icons/cursor.svg) center center no-repeat;
-}
+$icons-name: "cursor", "surveys", "heard", "clock";
 
-.icon-surveys {
-  background: url(../assets/icons/surveys.svg) center center no-repeat;
-}
-
-.icon-heard {
-  background: url(../assets/icons/heard.svg) center center no-repeat;
-}
-
-.icon-clock {
-  background: url(../assets/icons/clock.svg) center center no-repeat;
+@each $icon-name in $icons-name {
+  .icon-#{$icon-name} {
+    background: url("../assets/icons/#{$icon-name}.svg") center center no-repeat;
+  }
 }
 
 .icon-check {
