@@ -1,7 +1,7 @@
 .strategies {
   padding: 50px 0 106px;
-  border-bottom: 1px solid $opacity-border-color;
-  
+  border-bottom: 1px solid $border-opacity-color;
+
   @include media-small-desktop {
     padding: 50px 20px 120px;
   }

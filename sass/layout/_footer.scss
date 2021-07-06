@@ -84,7 +84,7 @@
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      color: $primary-color;
+      color: $link-hover-color;
     }
   }
 
@@ -111,7 +111,7 @@
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      background-color: $hover-color;
+      background-color: $button-hover-color;
     }
   }
 }

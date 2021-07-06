@@ -1,7 +1,7 @@
 .button {
   box-sizing: border-box;
   border-radius: 4px;
-  background-color: $primary-color;
+  background-color: $button-primary-color;
   color: $light-color;
   @include font($size: 1.6rem, $height: 2.4rem, $weight: 500);
   border: none;

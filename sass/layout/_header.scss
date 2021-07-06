@@ -35,7 +35,7 @@
 
       &:hover {
         transition: all 0.3s ease-in-out;
-        background-color: $hover-color;
+        background-color: $button-hover-color;
       }
     }
 
@@ -46,7 +46,7 @@
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        background-color: $primary-color;
+        background-color: $button-secondary-hover-color;
       }
     }
   }
@@ -69,7 +69,7 @@
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      color: $primary-color;
+      color: $link-hover-color;
     }
   }
 }

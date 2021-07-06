@@ -31,7 +31,7 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
 }
 
 .tool__title {
@@ -50,6 +50,6 @@
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-color: $hover-color;
+    background-color: $button-hover-color;
   }
 }
