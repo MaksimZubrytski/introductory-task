@@ -42,11 +42,11 @@
     &_transparent {
       background-color: $light-color;
       border: 1px solid $border-color;
-      color: $dark-blue-color;
+      color: $secondary-color;
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        background-color: $additional-color;
+        background-color: $primary-color;
       }
     }
   }
@@ -69,7 +69,7 @@
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      color: $additional-color;
+      color: $primary-color;
     }
   }
 }

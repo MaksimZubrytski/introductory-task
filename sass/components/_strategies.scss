@@ -41,7 +41,7 @@
     }
 
     &.active {
-      background-color: $additional-color;
+      background-color: $primary-color;
     }
   }
 }
@@ -72,7 +72,7 @@
     color: $text-color;
 
     &:hover {
-      color: $additional-color;
+      color: $primary-color;
       transition: all 0.3s ease-in-out;
     }
   }
