@@ -1,14 +1,14 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 html {
   font-size: 10px;
-  @include media-mobile-big {
+  
+  @include media-mobile-large {
     font-size: 8px;
   }
+
   @include media-mobile-small {
     font-size: 7px;
   }
@@ -26,7 +26,6 @@ h1 {
 
 h2 {
   @include font($size: 3.6rem, $height: 5.4rem, $weight: bold);
-  color: $title-color;
 }
 
 h3 {
@@ -45,7 +44,6 @@ h5 {
 }
 
 h6 {
-  @extend %additional-font;
   @include font($size: 2rem, $height: 3rem, $weight: 400);
   color: $title-color;
 }

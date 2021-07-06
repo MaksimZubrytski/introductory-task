@@ -4,9 +4,10 @@
 @import './abstracts/placeholders';
 
 //base
-@import './base/base';
+@import './base/normalize';
 @import './base/icons';
 @import './base/buttons';
+@import './base/base';
 
 //layouts
 @import './layout/column';

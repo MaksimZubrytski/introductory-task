@@ -1,52 +1,69 @@
 .marketers {
-  padding: 50px 0 50px;
+  padding: 39px 0 50px;
+
   @include media-small-desktop {
     padding: 50px 20px 50px;
   }
+
   @include media-mobile-small {
     padding: 25px 10px 25px;
   }
-}
 
-.marketers__wrapper {
-  display: flex;
-  justify-content: space-between;
-  @include media-tablet {
-    flex-direction: column;
-    align-items: center;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 6px;
+
+    @include media-tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
   }
-}
 
-.marketers__title {
-  margin-top: 3px;
-}
+  &__title {
+    margin-top: 3px;
+    margin-bottom: 0;
+  }
 
-.marketers__subtitle {
-  margin-top: 30px;
-}
+  &__subtitle {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
 
-.marketers__container {
-  margin-top: 26px;
-}
+  &__container {
+    margin-top: 26px;
+  }
 
-.marketers__text:nth-child(1) {
-  @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
-  color: $text-color;
-}
+  &__text {
+    max-width: 486px;
+    margin-top: 22px;
+    &:first-child {
+      display: inline-block;
+      margin-top: 28px;
+      @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+      color: $text-color;
+    }
+  }
 
-.marketers__text {
-  max-width: 486px;
-  margin-top: 22px;
-}
+  &__item {
+    margin-top: 10px;
+    max-width: 486px;
+  }
 
-.marketers__item {
-  margin-top: 12px;
-  max-width: 486px;
-}
+  &__img {
+    max-width: 542px;
+    max-height: 609px;
+    margin-top: 15px;
 
-.marketers__img {
-  @include media-tablet {
-    margin-top: 40px;
-    max-height: 300px;
+    @include media-small-desktop {
+      max-height: 500px;
+    }
+
+    @include media-tablet {
+      margin-top: 40px;
+      max-height: 300px;
+    }
+    
   }
 }

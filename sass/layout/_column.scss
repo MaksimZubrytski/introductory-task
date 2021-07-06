@@ -2,17 +2,18 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    >* {
-        flex-basis: 21%;
+    > .tool {
+        flex-basis: 22%;
     }
     @include media-tablet {
-        >* {
-            flex-basis: 45%;
+        justify-content: space-around;
+        > .tool {
+            flex-basis: 40%;
         }
     }
-    @include media-mobile-big {
+    @include media-mobile-large {
         justify-content: center;
-        >* {
+        > .tool {
             flex-basis: 90%;
         }
     }
@@ -22,12 +23,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    >* {
-        flex-basis: 30%;
+    >.article {
+        flex-basis: 31%;
     }
     @include media-tablet {
         justify-content: center;
-        >* {
+        >.article {
             flex-basis: 55%;
         }
     }

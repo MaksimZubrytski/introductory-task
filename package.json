@@ -1,0 +1,32 @@
+{
+  "name": "introductory-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "sass": "^1.35.1",
+    "uglify-js": "^3.13.10"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.1"
+  },
+  "scripts": {
+    "build": "gulp sass-compile",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaksimZubrytski/introductory-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaksimZubrytski/introductory-task/issues"
+  },
+  "homepage": "https://github.com/MaksimZubrytski/introductory-task#readme"
+}
