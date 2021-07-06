@@ -1,9 +1,11 @@
 .strategies {
   padding: 50px 0 106px;
   border-bottom: 1px solid $opacity-border-color;
+  
   @include media-small-desktop {
     padding: 50px 20px 120px;
   }
+
   @include media-mobile-small {
     padding: 25px 10px 50px;
   }
@@ -50,9 +52,11 @@
 
   &__image {
     margin-top: 40px;
+
     @include media-mobile-large {
       max-width: 300px;
     }
+
   }
 
   &__info {

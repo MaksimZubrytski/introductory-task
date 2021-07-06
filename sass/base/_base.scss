@@ -4,9 +4,11 @@
 
 html {
   font-size: 10px;
+  
   @include media-mobile-large {
     font-size: 8px;
   }
+
   @include media-mobile-small {
     font-size: 7px;
   }

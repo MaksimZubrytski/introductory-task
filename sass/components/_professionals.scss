@@ -1,8 +1,10 @@
 .professionals {
   padding: 120px 0 50px;
+  
   @include media-small-desktop {
     padding: 120px 20px 50px;
   }
+
   @include media-mobile-small {
     padding: 50px 10px 25px;
   }
@@ -11,10 +13,12 @@
     display: flex;
     justify-content: space-between;
     padding: 0 16px 0 0;
+
     @include media-tablet {
       flex-direction: column;
       align-items: center;
     }
+
   }
 
   &__title {
@@ -48,12 +52,15 @@
   &__img {
     max-width: 520px;
     max-height: 573px;
+
     @include media-small-desktop {
       max-height: 450px;
     }
+
     @include media-tablet {
       margin-top: 30px;
       max-height: 300px;
     }
+
   }
 }
