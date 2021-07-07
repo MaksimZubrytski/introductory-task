@@ -25,12 +25,6 @@
   &__button {
     margin-top: 18px;
     padding: 15px 34px;
-    font-weight: 700;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      background-color: $button-hover-color;
-    }
   }
 }
 

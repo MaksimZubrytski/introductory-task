@@ -119,13 +119,7 @@
   }
 
   &__button {
-    font-weight: bold;
     margin-top: 22px;
     padding: 8px 15px;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      background-color: $button-hover-color;
-    }
   }
 }

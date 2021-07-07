@@ -42,13 +42,7 @@
   }
 
   &__button {
-    font-weight: bold;
     padding: 15px 41px;
-
-    &:hover {
-      transition: all 0.3s ease-in-out;
-      background-color: $button-hover-color;
-    }
   }
 
   &__link {

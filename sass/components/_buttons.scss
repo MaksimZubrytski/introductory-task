@@ -1,0 +1,31 @@
+.button {
+  padding: 11px 23px 11px 25px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: $button-primary-color;
+  color: $light-color;
+  @include font($size: 1.6rem, $height: 2.4rem, $weight: 700);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: $button-hover-color;
+  }
+
+  &_light {
+    font-weight: 600;
+    background-color: $light-color;
+    border: 1px solid $border-color;
+    color: $secondary-color;
+    
+    &:hover {
+      background-color: $button-secondary-hover-color;
+    }
+  }
+
+  &_fill {
+    font-weight: 600;
+  }
+}

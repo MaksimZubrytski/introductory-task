@@ -30,27 +30,9 @@
   }
 
   &__button {
-    padding: 11px 25px;
-    font-weight: 600;
 
     &:nth-child(2) {
       margin-left: 8px;
-
-      &:hover {
-        transition: all 0.3s ease-in-out;
-        background-color: $button-hover-color;
-      }
-    }
-
-    &_transparent {
-      background-color: $light-color;
-      border: 1px solid $border-color;
-      color: $secondary-color;
-      transition: all 0.3s ease-in-out;
-
-      &:hover {
-        background-color: $button-secondary-hover-color;
-      }
     }
   }
 }
