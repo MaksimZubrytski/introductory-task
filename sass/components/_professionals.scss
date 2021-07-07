@@ -18,7 +18,6 @@
       flex-direction: column;
       align-items: center;
     }
-
   }
 
   &__title {
@@ -38,6 +37,7 @@
   &__text {
     max-width: 486px;
     margin-top: 22px;
+
     &:first-child {
       @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
       color: $text-color;
@@ -61,6 +61,5 @@
       margin-top: 30px;
       max-height: 300px;
     }
-
   }
 }

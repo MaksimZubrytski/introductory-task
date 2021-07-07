@@ -1,8 +1,10 @@
 .footer {
   padding: 102px 0 95px;
+
   @include screen("small-desktop") {
     padding: 85px 20px 95px;
   }
+
   @include screen("mobile-small") {
     padding: 50px 10px 45px;
   }
@@ -10,6 +12,7 @@
   &__wrapper {
     display: flex;
     padding: 0px 8px;
+
     @include screen("tablet") {
       flex-direction: column;
     }
@@ -18,6 +21,7 @@
   &__layout {
     display: flex;
     flex-wrap: wrap;
+
     @include screen("mobile-large") {
       flex-direction: column;
     }
@@ -25,15 +29,18 @@
 
   &__container {
     flex: 1;
+
     @include screen("mobile-large") {
       align-items: center;
     }
 
     &:first-child {
       margin-left: 140px;
+
       @include screen("tablet") {
         margin-left: 21px;
       }
+
       @include screen("mobile-large") {
         margin-left: 0;
       }
@@ -41,6 +48,7 @@
 
     &:nth-child(2) {
       margin-left: 67px;
+
       @include screen("mobile-large") {
         margin-left: 0;
       }
@@ -48,9 +56,11 @@
 
     &:nth-child(3) {
       margin-left: 21px;
+
       @include screen("tablet") {
         flex-basis: 100%;
       }
+
       @include screen("mobile-large") {
         margin-left: 0;
       }
@@ -62,6 +72,7 @@
     margin-bottom: 0px;
     max-width: 280px;
     @extend %additional-font;
+
     @include screen("tablet") {
       margin-top: 20px;
     }
@@ -70,9 +81,11 @@
   &__list {
     padding: 0;
     margin-top: 35px;
+
     @include screen("tablet") {
       margin-top: 20px;
     }
+
     @include screen("mobile-large") {
       margin-top: 15px;
     }
@@ -94,6 +107,7 @@
     padding: 12px 15px;
     border: 1px solid $border-color;
     border-radius: 4px;
+
     @include screen("mobile-large") {
       max-width: 280px;
     }
