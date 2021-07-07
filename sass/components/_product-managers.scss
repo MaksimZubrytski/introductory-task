@@ -58,21 +58,25 @@
     }
   }
 
-  &__img {
+  &__image-container {
+    display: flex;
     max-width: 532px;
-    max-height: 520px;
 
     @include screen("small-desktop") {
-      max-height: 450px;
+      max-width: 400px;
     }
 
     @include screen("tablet") {
       margin-top: 40px;
-      max-height: 300px;
+      max-width: 300px;
     }
 
     @include screen("mobile-large") {
-      max-height: 280px;
+      max-width: 280px;
     }
+  }
+
+  &__img {
+    width: 100%;
   }
 }

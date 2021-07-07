@@ -56,21 +56,25 @@
     text-decoration: underline;
   }
 
-  &__img {
+  &__image-container {
+    display: flex;
     max-width: 605px;
-    max-height: 496px;
 
     @include screen("small-desktop") {
-      max-height: 400px;
+      max-width: 400px;
     }
 
     @include screen("tablet") {
       margin-top: 40px;
-      max-height: 300px;
+      max-width: 300px;
     }
 
     @include screen("mobile-large") {
       display: none;
     }
+  }
+
+  &__img {
+    width: 100%;
   }
 }

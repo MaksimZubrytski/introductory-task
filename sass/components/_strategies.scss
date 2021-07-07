@@ -49,14 +49,16 @@
 }
 
 .article {
-
-  &__image {
+  &__image-container {
     margin-top: 40px;
 
     @include screen("mobile-large") {
       max-width: 300px;
     }
+  }
 
+  &__image {
+    width: 100%;
   }
 
   &__info {
