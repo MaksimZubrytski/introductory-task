@@ -23,6 +23,7 @@
   &__title {
     color: $title-color;
     margin-top: 83px;
+    margin-bottom: 0px;
     max-width: 518px;
 
     @include screen("tablet") {

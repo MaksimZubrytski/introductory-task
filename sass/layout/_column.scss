@@ -2,22 +2,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    > .tool {
-        flex-basis: 22%;
-    }
+    width: 100%;
 
-    @include screen("tablet") {
-        justify-content: space-around;
-        > .tool {
-            flex-basis: 40%;
-        }
-    }
-
-    @include screen("mobile-large") {
-        justify-content: center;
-        > .tool {
-            flex-basis: 90%;
-        }
+    > div, article {
+        max-width: 25%;
     }
 }
 
@@ -25,14 +13,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    > .article {
-        flex-basis: 31%;
-    }
 
-    @include screen("tablet") {
-        justify-content: center;
-        > .article {
-            flex-basis: 55%;
-        }
+    > div, article {
+        max-width: 33%;
     }
 }

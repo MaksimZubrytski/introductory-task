@@ -4,6 +4,7 @@
   border-radius: 4px;
   background-color: $button-primary-color;
   color: $light-color;
+  @extend %main-font;
   @include font($size: 1.6rem, $height: 2.4rem, $weight: 700);
   border: none;
   cursor: pointer;
