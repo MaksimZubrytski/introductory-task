@@ -6,8 +6,12 @@
     padding: 60px 20px 90px;
   }
 
+  @include screen("mobile-large") {
+    padding: 25px 10px 25px;
+  }
+
   @include screen("mobile-small") {
-    padding: 30px 10px 45px;
+    padding: 15px 10px 15px;
   }
 
   &__wrapper {
@@ -15,6 +19,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @include screen("tablet") {
+      padding: 0;
+    }
   }
 
   &__title {
@@ -29,10 +37,16 @@
 }
 
 .tool {
-  @include screen("mobile-large") {
+
+  @include screen("tablet") {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 50%;
+  }
+
+  @include screen("mobile-large") {
+    min-width: 100%;
   }
 
   &__title {
@@ -43,5 +57,9 @@
   &__text {
     margin-top: 13px;
     max-width: 240px;
+
+    @include screen("tablet") {
+      text-align: center;
+    }
   }
 }

@@ -1,28 +1,40 @@
 html {
     font-size: 10px;
-
-    @include screen("mobile-large") {
-        font-size: 8px;
-    }
-
-    @include screen("mobile-small") {
-        font-size: 7px;
-    }
 }
 
 body {
     @extend %main-font;
     @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+
+    @include screen("mobile-large") {
+        @include font($size: 1.4rem, $height: 2.4rem, $weight: 500);
+    }
 }
 
 .h1 {
     @include font($size: 4.4rem, $height: 5.4rem, $weight: bold);
     color: $title-color;
+
+    @include screen("mobile-large") {
+        @include font($size: 3.2rem, $height: 4.8rem, $weight: bold);
+    }
+
+    @include screen("mobile-small") {
+        @include font($size: 2.6rem, $height: 4.2rem, $weight: bold);
+    }
 }
 
 .h2 {
     @include font($size: 3.6rem, $height: 5.4rem, $weight: bold);
     color: $title-color;
+
+    @include screen("mobile-large") {
+        @include font($size: 2.8rem, $height: 4.6rem, $weight: bold);
+    }
+
+    @include screen("mobile-small") {
+        @include font($size: 2.4rem, $height: 4.0rem, $weight: bold);
+    }
 }
 
 .h3 {
@@ -38,6 +50,10 @@ body {
 .h5 {
     @include font($size: 2.4rem, $height: 3.4rem, $weight: 700);
     color: $title-color;
+
+    @include screen("tablet") {
+        @include font($size: 2rem, $height: 3rem, $weight: 700);
+    }
 }
 
 .h6 {

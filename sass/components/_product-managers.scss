@@ -24,6 +24,10 @@
   &__container {
     margin-top: 50px;
     max-width: 486px;
+
+    @include screen("mobile-large") {
+      margin-top: 10px;
+    }
   }
   
   &__text {
@@ -53,6 +57,10 @@
     @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
     color: $text-color;
 
+    @include screen("mobile-large") {
+      @include font($size: 1.4rem, $height: 2.4rem, $weight: 500);
+    }
+    
     &:first-child {
       max-width: 365px;
     }
