@@ -17,11 +17,20 @@
       justify-content: space-around;
     }
 
-    @include screen("tablet") {
+    @include screen("mobile-large") {
       flex-direction: column;
       align-items: center;
     }
+  }
 
+  &__container {
+    @include screen("tablet") {
+      min-width: 425px;
+    }
+
+    @include screen("mobile-large") {
+      min-width: 280px;
+    }
   }
 
   &__title {
@@ -36,8 +45,9 @@
 
     @include screen("mobile-large") {
       margin-top: 5px;
+      text-align: center;
+      max-width: 100%;
     }
-
   }
 
   &__text {
@@ -47,15 +57,28 @@
 
     @include screen("mobile-large") {
       @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+      text-align: center;
+      max-width: 100%;
     }
   }
 
   &__buttons {
     margin-top: 52px;
+
+    @include screen("mobile-large") {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__button {
     padding: 15px 41px;
+
+    @include screen("mobile-large") {
+      margin-bottom: 10px;
+    }
   }
 
   &__link {
@@ -79,7 +102,7 @@
 
     @include screen("tablet") {
       margin-top: 40px;
-      max-width: 400px;
+      max-width: 350px;
     }
 
     @include screen("mobile-large") {

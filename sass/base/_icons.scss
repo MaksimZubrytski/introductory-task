@@ -16,6 +16,10 @@
   margin-top: 22px;
   width: 50px;
   height: 50px;
+
+  @include screen("tablet") {
+    margin-top: 35px;
+  }
 }
 
 $icons-name: "cursor", "surveys", "heard", "clock";

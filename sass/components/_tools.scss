@@ -61,5 +61,10 @@
     @include screen("tablet") {
       text-align: center;
     }
+
+    @include screen("mobile-large") {
+      max-width: 100%;
+      @include font($size: 1.8rem, $height: 2.8rem, $weight: 500);
+    }
   }
 }

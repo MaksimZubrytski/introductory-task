@@ -2,7 +2,11 @@
   padding: 120px 0 50px;
 
   @include screen("small-desktop") {
-    padding: 120px 20px 50px;
+    padding: 80px 20px 50px;
+  }
+
+  @include screen("tablet") {
+    padding: 40px 20px 40px;
   }
 
   @include screen("mobile-large") {
