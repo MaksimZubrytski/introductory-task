@@ -46,26 +46,6 @@
     max-width: 486px;
   }
 
-  &__list {
-    padding-left: 65px;
-  }
-
-  &__item {
-    position: relative;
-    margin-top: 30px;
-    max-width: 385px;
-    @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
-    color: $text-color;
-
-    @include screen("mobile-large") {
-      @include font($size: 1.4rem, $height: 2.4rem, $weight: 500);
-    }
-    
-    &:first-child {
-      max-width: 365px;
-    }
-  }
-
   &__image-container {
     display: flex;
     max-width: 532px;
@@ -86,5 +66,25 @@
 
   &__img {
     width: 100%;
+  }
+}
+
+.check-list {
+  padding-left: 65px;
+
+  &__item {
+    position: relative;
+    margin-top: 30px;
+    max-width: 385px;
+    @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+    color: $text-color;
+
+    @include screen("mobile-large") {
+      @include font($size: 1.4rem, $height: 2.4rem, $weight: 500);
+    }
+    
+    &:first-child {
+      max-width: 365px;
+    }
   }
 }
