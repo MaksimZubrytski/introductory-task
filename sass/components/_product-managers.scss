@@ -2,7 +2,11 @@
   padding: 50px 0 4px;
 
   @include screen("small-desktop") {
-    padding: 50px 20px 50px;
+    padding: 30px 20px 30px;
+  }
+
+  @include screen("tablet") {
+    padding: 25px 20px 25px;
   }
 
   @include screen("mobile-small") {
@@ -14,7 +18,7 @@
     justify-content: space-between;
     padding: 0;
 
-    @include screen("tablet") {
+    @include screen("mobile-large") {
       flex-direction: column-reverse;
       align-items: center;
     }
@@ -25,7 +29,16 @@
     margin-top: 50px;
     max-width: 486px;
 
+    @include screen("small-desktop") {
+      margin-top: 10px;
+    }
+
+    @include screen("tablet") {
+      min-width: 425px;
+    }
+
     @include screen("mobile-large") {
+      min-width: 100%;
       margin-top: 10px;
     }
   }
@@ -56,11 +69,14 @@
 
     @include screen("tablet") {
       margin-top: 40px;
+      margin-right: 20px;
       max-width: 300px;
     }
 
     @include screen("mobile-large") {
-      max-width: 280px;
+      margin-top: 15px;
+      max-width: 180px;
+      margin-right: 0px;
     }
   }
 

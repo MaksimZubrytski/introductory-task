@@ -2,11 +2,11 @@
   padding: 120px 0 50px;
 
   @include screen("small-desktop") {
-    padding: 80px 20px 50px;
+    padding: 40px 20px 40px;
   }
 
   @include screen("tablet") {
-    padding: 40px 20px 40px;
+    padding: 30px 20px 30px;
   }
 
   @include screen("mobile-large") {
@@ -22,7 +22,7 @@
     justify-content: space-between;
     padding: 0 16px 0 0;
 
-    @include screen("tablet") {
+    @include screen("mobile-large") {
       flex-direction: column;
       align-items: center;
       padding: 0;
@@ -41,6 +41,15 @@
 
   &__container {
     margin-top: 23px;
+
+    @include screen("tablet") {
+      min-width: 425px;
+    }
+
+    @include screen("mobile-large") {
+      min-width: 100%;
+      text-align: center;
+    }
   }
 
   &__text {
@@ -51,11 +60,19 @@
       @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
       color: $text-color;
     }
+
+    @include screen("mobile-large") {
+      min-width: 100%;
+    }
   }
 
   &__item {
     margin-top: 12px;
     max-width: 486px;
+
+    @include screen("mobile-large") {
+      min-width: 100%;
+    }
   }
 
   &__image-container {
@@ -68,7 +85,13 @@
 
     @include screen("tablet") {
       margin-top: 30px;
+      margin-left: 10px;
       max-width: 300px;
+    }
+
+    @include screen("mobile-large") {
+      max-width: 180px;
+      margin-left: 0px;
     }
   }
 

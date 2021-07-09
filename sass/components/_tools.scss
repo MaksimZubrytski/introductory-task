@@ -38,7 +38,7 @@
     margin-top: 18px;
     padding: 15px 34px;
 
-    @include screen("mobile-large") {
+    @include screen("tablet") {
       margin-top: 30px;
     }
   }
