@@ -3,11 +3,15 @@
   border-bottom: 1px solid $border-opacity-color;
 
   @include screen("small-desktop") {
-    padding: 50px 20px 120px;
+    padding: 50px 20px 60px;
+  }
+
+  @include screen("tablet") {
+    padding: 20px 20px 20px;
   }
 
   @include screen("mobile-large") {
-    padding: 25px 10px 50px;
+    padding: 20px 10px 20px;
   }
 
   &__wrapper {
@@ -23,6 +27,11 @@
     margin-bottom: 0;
     @include font($size: 3.4rem, $height: 5.1rem, $weight: bold);
 
+    @include screen("tablet") {
+      margin-top: 5px;
+      text-align: center;
+    }
+
     @include screen("mobile-large") {
       @include font($size: 2.4rem, $height: 4.2rem, $weight: bold);
     }
@@ -30,6 +39,10 @@
 
   &__text {
     margin-top: 9px;
+
+    @include screen("tablet") {
+      text-align: center;
+    }
   }
 
   &__list {
@@ -37,6 +50,10 @@
     justify-content: center;
     padding: 0;
     margin-top: 10px;
+
+    @include screen("tablet") {
+      display: none;
+    }
   }
 
   &__item {
@@ -58,6 +75,7 @@
 
 .strategies-article {
   @include screen("tablet") {
+    padding: 0 25px;
     min-width: 50%;
     display: flex;
     flex-direction: column;
@@ -71,15 +89,13 @@
   &__image-container {
     margin-top: 40px;
     @include screen("small-desktop") {
+      margin-top: 30px;
       max-width: 300px;
     }
 
     @include screen("tablet") {
-      max-width: 250px;
-    }
-
-    @include screen("mobile-large") {
-      max-width: 300px;
+      margin-top: 15px;
+      max-width: 400px;
     }
   }
 
@@ -98,7 +114,12 @@
     margin-top: 12px;
     max-width: 294px;
     @include screen("tablet") {
-      max-width: 250px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    @include screen("mobile-large") {
+      margin-bottom: 5px;
     }
   }
 

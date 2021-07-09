@@ -12,7 +12,7 @@
 .layout-3-column {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    overflow: hidden;
     width: 100%;
 
     > div, article {

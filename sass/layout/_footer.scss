@@ -5,8 +5,12 @@
     padding: 85px 20px 95px;
   }
 
-  @include screen("mobile-large") {
+  @include screen("tablet") {
     padding: 50px 10px 45px;
+  }
+
+  @include screen("mobile-large") {
+    padding: 40px 10px 45px;
   }
 
   &__wrapper {
@@ -28,8 +32,18 @@
     }
   }
 
+  &__logo {
+    @include screen("tablet") {
+      text-align: center;
+    }
+  }
+
   &__container {
     flex: 1;
+
+    @include screen("small-desktop") {
+      margin-top: 15px;
+    }
 
     @include screen("mobile-large") {
       align-items: center;
@@ -38,8 +52,14 @@
     &:first-child {
       margin-left: 140px;
 
+      @include screen("small-desktop") {
+        margin-top: 15px;
+        margin-left: 55px;
+      }
+
       @include screen("tablet") {
-        margin-left: 21px;
+        text-align: center;
+        margin-left: 0;
       }
 
       @include screen("mobile-large") {
@@ -49,6 +69,15 @@
 
     &:nth-child(2) {
       margin-left: 67px;
+
+      @include screen("small-desktop") {
+        margin-left: 45px;
+      }
+
+      @include screen("tablet") {
+        text-align: center;
+        margin-left: 0;
+      }
 
       @include screen("mobile-large") {
         margin-left: 0;
@@ -60,6 +89,11 @@
 
       @include screen("tablet") {
         flex-basis: 100%;
+      }
+
+      @include screen("tablet") {
+        text-align: center;
+        margin-left: 0;
       }
 
       @include screen("mobile-large") {
@@ -75,7 +109,9 @@
     @extend %additional-font;
 
     @include screen("tablet") {
+      min-width: 100%;
       margin-top: 20px;
+      @include font($size: 2.6rem, $height: 3.6rem, $weight: 700);
     }
   }
 
@@ -100,6 +136,18 @@
     &:hover {
       color: $link-hover-color;
     }
+
+    @include screen("tablet") {
+      @include font($size: 2.2rem, $height: 3.4rem, $weight: 400);
+    }
+  }
+
+  &__form {
+    @include screen("tablet") {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__input {
@@ -122,5 +170,10 @@
   &__button {
     margin-top: 22px;
     padding: 8px 15px;
+
+    @include screen("tablet") {
+      @include font($size: 2.0rem, $height: 3.2rem, $weight: 700);
+      padding: 16px 36px;
+    }
   }
 }

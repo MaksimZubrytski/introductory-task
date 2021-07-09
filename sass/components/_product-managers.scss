@@ -9,6 +9,11 @@
     padding: 25px 20px 25px;
   }
 
+  @include screen("mobile-large") {
+    padding: 25px 10px 25px;
+    border-bottom: 1px solid $border-opacity-color;
+  }
+
   @include screen("mobile-small") {
     padding: 25px 10px 25px;
   }
@@ -51,6 +56,11 @@
       @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
       color: $text-color;
     }
+
+    @include screen("mobile-large") {
+      min-width: 100%;
+      @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+    }
   }
 
   &__title {
@@ -69,14 +79,12 @@
 
     @include screen("tablet") {
       margin-top: 40px;
-      margin-right: 20px;
+      margin-right: 25px;
       max-width: 300px;
     }
 
     @include screen("mobile-large") {
-      margin-top: 15px;
-      max-width: 180px;
-      margin-right: 0px;
+      display: none;
     }
   }
 

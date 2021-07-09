@@ -9,7 +9,8 @@
     color: $text-color;
 
     @include screen("mobile-large") {
-      @include font($size: 1.4rem, $height: 2.4rem, $weight: 500);
+      min-width: 100%;
+      @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
     }
 
     &:first-child {
