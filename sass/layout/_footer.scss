@@ -111,7 +111,12 @@
     @include screen("tablet") {
       min-width: 100%;
       margin-top: 20px;
+      padding: 0 50px;
       @include font($size: 2.6rem, $height: 3.6rem, $weight: 700);
+    }
+
+    @include screen("mobile-large") {
+      padding: 0 15px;
     }
   }
 
@@ -125,6 +130,12 @@
 
     @include screen("mobile-large") {
       margin-top: 15px;
+    }
+  }
+
+  &__item {
+    @include screen("tablet") {
+      margin-top: 10px;
     }
   }
 
@@ -157,13 +168,25 @@
     border: 1px solid $border-color;
     border-radius: 4px;
 
+    @include screen("tablet") {
+      max-width: 400px;
+      width: 400px;
+      padding: 20px 15px;
+    }
+
     @include screen("mobile-large") {
-      max-width: 280px;
+      max-width: 400px;
+      width: 300px;
+      padding: 20px 15px;
     }
 
     &::placeholder {
       @include font($size: 1.6rem, $height: 2.8rem, $weight: 600);
-      color: #bcd0e5;
+      color: $border-color;
+
+      @include screen("tablet") {
+        @include font($size: 2.0rem, $height: 3.2rem, $weight: 400);
+      }
     }
   }
 
