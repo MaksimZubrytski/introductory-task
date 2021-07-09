@@ -90,6 +90,11 @@
     color: $primary-color;
     font-weight: 600;
     text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $button-hover-color;
+    }
   }
 
   &__image-container {
