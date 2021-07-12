@@ -93,7 +93,7 @@
   &__title {
     margin-top: 0px;
     margin-bottom: 0px;
-    max-width: 280px;
+    max-width: 260px;
     @extend %additional-font;
 
     @include screen("tablet") {
@@ -157,14 +157,15 @@
     border-radius: 4px;
 
     @include screen("tablet") {
-      max-width: 400px;
-      width: 400px;
+      max-width: 500px;
+      width: 500px;
       padding: 20px 15px;
+      @include font($size: 2.6rem, $height: 3.6rem, $weight: 500);
     }
 
     @include screen("mobile-large") {
-      max-width: 400px;
-      width: 300px;
+      max-width: 450px;
+      width: 100%;
       padding: 20px 15px;
     }
 
@@ -173,13 +174,13 @@
       color: $border-color;
 
       @include screen("tablet") {
-        @include font($size: 2.0rem, $height: 3.2rem, $weight: 400);
+        @include font($size: 2.0rem, $height: 3.2rem, $weight: 600);
       }
     }
   }
 
   &__button {
-    margin-top: 22px;
+    margin-top: 16px;
     padding: 8px 15px;
 
     @include screen("tablet") {
