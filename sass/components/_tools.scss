@@ -1,6 +1,7 @@
 .tools {
   padding: 48px 0 90px;
   background: url(../assets/img/tools/background.svg) center bottom no-repeat;
+  background-size: contain;
 
   @include screen("small-desktop") {
     padding: 60px 20px 90px;
