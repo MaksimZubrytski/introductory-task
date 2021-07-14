@@ -1,27 +1,48 @@
 .strategies {
   padding: 50px 0 106px;
-  border-bottom: 1px solid $opacity-border-color;
-  
-  @include media-small-desktop {
-    padding: 50px 20px 120px;
+  border-bottom: 1px solid $border-opacity-color;
+
+  @include screen("small-desktop") {
+    padding: 50px 20px 60px;
   }
 
-  @include media-mobile-small {
-    padding: 25px 10px 50px;
+  @include screen("tablet") {
+    padding: 20px 20px 20px;
+  }
+
+  @include screen("mobile-large") {
+    padding: 20px 10px 20px;
   }
 
   &__wrapper {
     padding: 0 10px;
+
+    @include screen("tablet") {
+      padding: 0;
+    }
   }
 
   &__title {
     margin-top: 32px;
     margin-bottom: 0;
     @include font($size: 3.4rem, $height: 5.1rem, $weight: bold);
+
+    @include screen("tablet") {
+      margin-top: 5px;
+      text-align: center;
+    }
+
+    @include screen("mobile-large") {
+      @include font($size: 2.4rem, $height: 4.2rem, $weight: bold);
+    }
   }
 
   &__text {
     margin-top: 9px;
+
+    @include screen("tablet") {
+      text-align: center;
+    }
   }
 
   &__list {
@@ -29,6 +50,10 @@
     justify-content: center;
     padding: 0;
     margin-top: 10px;
+
+    @include screen("tablet") {
+      display: none;
+    }
   }
 
   &__item {
@@ -37,6 +62,7 @@
     height: 16px;
     background-color: $gray-color;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
 
     &:nth-child(1n + 2) {
       margin-left: 10px;
@@ -45,18 +71,41 @@
     &.active {
       background-color: $primary-color;
     }
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
   }
 }
 
-.article {
+.strategies-article {
+  @include screen("tablet") {
+    padding: 0 25px;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-  &__image {
+  @include screen("mobile-large") {
+    min-width: 100%;
+  }
+
+  &__image-container {
     margin-top: 40px;
-
-    @include media-mobile-large {
+    @include screen("small-desktop") {
+      margin-top: 30px;
       max-width: 300px;
     }
 
+    @include screen("tablet") {
+      margin-top: 15px;
+      max-width: 400px;
+    }
+  }
+
+  &__image {
+    width: 100%;
   }
 
   &__info {
@@ -68,7 +117,15 @@
 
   &__title {
     margin-top: 12px;
-    width: 294px;
+    max-width: 294px;
+    @include screen("tablet") {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    @include screen("mobile-large") {
+      margin-bottom: 5px;
+    }
   }
 
   &__link {

@@ -1,13 +1,14 @@
 //abstract
-@import './abstracts/mixins';
 @import './abstracts/constants';
+@import './abstracts/mixins';
 @import './abstracts/placeholders';
 
 //base
 @import './base/normalize';
 @import './base/icons';
-@import './base/buttons';
 @import './base/base';
+@import './base/typography';
+@import './base/buttons';
 
 //layouts
 @import './layout/column';
@@ -17,9 +18,9 @@
 
 //components
 @import './components/logo';
+@import './components/check-list';
 @import './components/superpowers';
 @import './components/tools';
-@import './components/professionals';
+@import './components/section';
 @import './components/product-managers';
-@import './components/marketers';
 @import './components/strategies';

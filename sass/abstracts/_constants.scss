@@ -1,17 +1,25 @@
 $title-color: #2f281e;
 $text-color: #544837;
 $link-color: #2f281e;
+
+$link-hover-color: #ff9900;
+$button-hover-color: #173a56;
+$button-secondary-hover-color: #ff9900;
+
+$button-primary-color: #ff9900;
+
 $primary-color: #ff9900;
+$secondary-color: #173a56;
 $light-color: #ffffff;
 $dark-color: #000000;
-$hover-color: #173a56;
-$border-color: #bcd0e5;
-$secondary-color: #173a56;
 $gray-color: #efefef;
-$opacity-border-color: #bcd0e57f;
 
-$small-desktop: 1200px;
+$border-color: #bcd0e5;
+$border-opacity-color: #bcd0e57f;
+
 $content-width: 1126px;
-$tablet-width: 1000px;
-$mobile-large-width: 640px;
-$mobile-small-width: 320px;
+
+$screen-small-desktop: 1200px;
+$screen-tablet-width: 1000px;
+$screen-mobile-large-width: 640px;
+$screen-mobile-small-width: 320px;

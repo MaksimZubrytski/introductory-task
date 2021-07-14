@@ -1,5 +1,5 @@
-.product-managers {
-  padding: 50px 0 4px;
+.section {
+  padding: 120px 0 50px;
 
   @include screen("small-desktop") {
     padding: 30px 20px 30px;
@@ -15,28 +15,38 @@
   }
 
   @include screen("mobile-small") {
-    padding: 25px 10px 25px;
+    padding: 15px 10px 15px;
   }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 0;
+    padding: 0 16px 0 0;
 
     @include screen("mobile-large") {
-      flex-direction: column-reverse;
+      flex-direction: column;
       align-items: center;
+      padding: 0;
     }
+  }
 
+  &__title {
+    margin-top: 3px;
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    margin-top: 28px;
+    margin-bottom: 0;
+
+    @include screen("mobile-large") {
+      min-width: 100%;
+      @include font($size: 1.8rem, $height: 2.8rem, $weight: 700);
+    }
   }
 
   &__container {
-    margin-top: 50px;
-    max-width: 486px;
-
-    @include screen("small-desktop") {
-      margin-top: 10px;
-    }
+    margin-top: 23px;
 
     @include screen("tablet") {
       min-width: 425px;
@@ -44,13 +54,12 @@
 
     @include screen("mobile-large") {
       min-width: 100%;
-      margin-top: 10px;
     }
   }
-  
+
   &__text {
-    margin-top: 22px;
     max-width: 486px;
+    margin-top: 22px;
 
     &:first-child {
       @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
@@ -63,23 +72,27 @@
     }
   }
 
-  &__title {
-    margin-top: 4px;
-    margin-bottom: 0px;
+  &__item {
+    margin-top: 12px;
     max-width: 486px;
+
+    @include screen("mobile-large") {
+      min-width: 100%;
+      @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+    }
   }
 
   &__image-container {
     display: flex;
-    max-width: 532px;
+    max-width: 520px;
 
     @include screen("small-desktop") {
       max-width: 400px;
     }
 
     @include screen("tablet") {
-      margin-top: 40px;
-      margin-right: 25px;
+      margin-top: 30px;
+      margin-left: 10px;
       max-width: 300px;
     }
 

@@ -14,11 +14,12 @@
 </head>
 
 <body>
+
   <header class="header">
     <div class="wrapper header__wrapper">
 
       <div class="logo">
-        <a class="logo__link" href="#">
+        <a class="logo__link" href="/">
           <span class="icon logo__icon"></span>
         </a>
       </div>
@@ -35,27 +36,34 @@
         </nav>
 
         <div class="header__buttons">
-          <button class="button header__button header__button_transparent">Sign In</button>
-          <button class="button header__button">Sign Up</button>
+          <button class="button button_light header__button">Sign In</button>
+          <button class="button button_fill header__button">Sign Up</button>
         </div>
 
       </div>
 
       <div class="hamburger">
+        <input id="hamburger__toggle" type="checkbox" />
+        <label class="hamburger__btn" for="hamburger__toggle">
+          <span></span>
+        </label>
+
         <ul class="hamburger__list">
-          <li class="hamburger__item"></li>
-          <li class="hamburger__item"></li>
-          <li class="hamburger__item"></li>
+          <li><a class="hamburger__item" href="#">Product</a></li>
+          <li><a class="hamburger__item" href="#">Customers</a></li>
+          <li><a class="hamburger__item" href="#">Pricng</a></li>
+          <li><a class="hamburger__item" href="#">Resources</a></li>
         </ul>
       </div>
 
     </div>
   </header>
+
   <section class="superpowers">
     <div class="wrapper superpowers__wrapper">
 
       <div class="superpowers__container">
-        <h1 class="superpowers__title">The Design Thinking superpowers</h1>
+        <h1 class="h1 superpowers__title">The Design Thinking superpowers</h1>
         <p class="superpowers__text">Tools, tutorials, design and innovation experts, all in one place! The most
           intuitive way to imagine your next user experience.</p>
         <div class="superpowers__buttons">
@@ -66,37 +74,41 @@
         </div>
       </div>
 
-      <img class="superpowers__img" src="./assets/img/superpowers/superpowers.svg" alt="superpowers" />
+      <div class="superpowers__image-container">
+        <img class="superpowers__img" src="./assets/img/superpowers/superpowers.svg" alt="superpowers" />
+      </div>
+
     </div>
   </section>
+
   <section class="tools">
     <div class="wrapper tools__wrapper">
 
-      <h2 class="tools__title">We design tools to unveil your superpowers</h2>
+      <h2 class="h2 tools__title">We design tools to unveil your superpowers</h2>
 
       <div class="layout-4-column">
 
         <div class="tool">
           <span class="icon icon-cursor tool__icon"></span>
-          <h3 class="tool__title">First click tests</h3>
+          <h3 class="h3 tool__title">First click tests</h3>
           <p class="tool__text">While most people enjoy casino gambling,</p>
         </div>
 
         <div class="tool">
           <span class="icon icon-surveys tool__icon"></span>
-          <h3 class="tool__title">Design surveys</h3>
+          <h3 class="h3 tool__title">Design surveys</h3>
           <p class="tool__text">Sports betting, lottery and bingo playing for the fun</p>
         </div>
 
         <div class="tool">
           <span class="icon icon-heard tool__icon"></span>
-          <h3 class="tool__title">Preference tests</h3>
+          <h3 class="h3 tool__title">Preference tests</h3>
           <p class="tool__text">The Myspace page defines the individual.</p>
         </div>
 
         <div class="tool">
           <span class="icon icon-clock tool__icon"></span>
-          <h3 class="tool__title">Five second tests</h3>
+          <h3 class="h3 tool__title">Five second tests</h3>
           <p class="tool__text">Personal choices and the overall personality of the person.</p>
         </div>
 
@@ -105,106 +117,128 @@
       <button class="button tools__button">SIGN UP NOW</button>
     </div>
   </section>
-  <section class="professionals">
-    <div class="wrapper professionals__wrapper">
 
-      <div class="professionals__container">
-        <span class="professionals__text">Effortless Validation for</span>
-        <h2 class="professionals__title">Design Professionals</h2>
-        <p class="professionals__text">The Myspace page defines the individual, his or her characteristics,
+  <section class="section">
+    <div class="wrapper section__wrapper">
+
+      <div class="section__container">
+        <span class="section__text">Effortless Validation for</span>
+        <h2 class="h2 section__title">Design Professionals</h2>
+        <p class="section__text">The Myspace page defines the individual, his or her characteristics,
           traits, personal choices and the overall personality of the person. </p>
-          
-        <h4 class="professionals__subtitle">Accessory makers</h4>
-        <p class="professionals__item">While most people enjoy casino gambling, sports betting, lottery and
+
+        <h4 class="h4 section__subtitle">Accessory makers</h4>
+        <p class="section__item">While most people enjoy casino gambling, sports betting, lottery and
           bingo playing for the fun</p>
 
-        <h4 class="professionals__subtitle">Alterationists</h4>
-        <p class="professionals__item">If you are looking for a new way to promote your business that won’t cost
+        <h4 class="h4 section__subtitle">Alterationists</h4>
+        <p class="section__item">If you are looking for a new way to promote your business that won’t cost
           you more money, </p>
 
-        <h4 class="professionals__subtitle">Custom Design designers</h4>
-        <p class="professionals__item">If you are looking for a new way to promote your business that won’t cost
+        <h4 class="h4 section__subtitle">Custom Design designers</h4>
+        <p class="section__item">If you are looking for a new way to promote your business that won’t cost
           you more money, </p>
 
       </div>
 
-      <img class="professionals__img" src="./assets/img/professionals/man.svg" alt="man" />
+      <div class="section__image-container">
+        <img class="section__img" src="./assets/img/professionals/man.svg" alt="professional" />
+      </div>
+
     </div>
   </section>
+
   <section class="product-managers">
     <div class="wrapper product-managers__wrapper">
 
-      <img class="product-managers__img" src="./assets/img/product-manager/product-manager.svg" alt="product manager" />
+      <div class="product-managers__image-container">
+        <img class="product-managers__img" src="./assets/img/product-manager/product-manager.svg"
+          alt="product manager" />
+      </div>
 
       <div class="product-managers__container">
         <span class="product-managers__text">Easier decision making for</span>
-        <h2 class="product-managers__title">Product Managers</h2>
+        <h2 class="h2 product-managers__title">Product Managers</h2>
         <p class="product-managers__text">The Myspace page defines the individual, his or her characteristics,
           traits, personal choices and the overall personality of the person. </p>
-        <ul class="product-managers__list">
-          <li class="product-managers__item"><span class="icon icon-check"></span>Never worry about overpaying
+        <ul class="check-list">
+          <li class="check-list__item"><span class="icon icon-check"></span>Never worry about overpaying
             for your energy again. </li>
-          <li class="product-managers__item"><span class="icon icon-check"></span>We will only switch you to
+          <li class="check-list__item"><span class="icon icon-check"></span>We will only switch you to
             energy companies that we trust and will treat you right</li>
-          <li class="product-managers__item"><span class="icon icon-check"></span>We track the markets daily and
+          <li class="check-list__item"><span class="icon icon-check"></span>We track the markets daily and
             know where the savings are.</li>
         </ul>
       </div>
 
     </div>
   </section>
-  <section class="marketers">
-    <div class="wrapper marketers__wrapper">
 
-      <div class="marketers__container">
-        <span class="marketers__text">Optimisation for</span>
-        <h2 class="marketers__title">Marketers</h2>
-        <p class="marketers__text">Few would argue that, despite the advancements of feminism over the past
+  <section class="section">
+    <div class="wrapper section__wrapper">
+
+      <div class="section__container">
+        <span class="section__text">Optimisation for</span>
+        <h2 class="h2 section__title">Marketers</h2>
+        <p class="section__text">Few would argue that, despite the advancements of feminism over the past
           three decades, women still face a double standard when it comes to their behavior. </p>
 
-        <h4 class="marketers__subtitle">Accessory makers</h4>
-        <p class="marketers__item">While most people enjoy casino gambling, sports betting, lottery and bingo
+        <h4 class="h4 section__subtitle">Accessory makers</h4>
+        <p class="section__item">While most people enjoy casino gambling, sports betting, lottery and bingo
           playing for the fun</p>
 
-        <h4 class="marketers__subtitle">Alterationists</h4>
-        <p class="marketers__item">If you are looking for a new way to promote your business that won’t cost you
+        <h4 class="h4 section__subtitle">Alterationists</h4>
+        <p class="section__item">If you are looking for a new way to promote your business that won’t cost you
           more money, </p>
 
-        <h4 class="marketers__subtitle">Custom Design designers</h4>
-        <p class="marketers__item">If you are looking for a new way to promote your business that won’t cost you
+        <h4 class="h4 section__subtitle">Custom Design designers</h4>
+        <p class="section__item">If you are looking for a new way to promote your business that won’t cost you
           more money, </p>
       </div>
 
-      <img class="marketers__img" src="./assets/img/marketers/marketer.svg" alt="marketer" />
+      <div class="section__image-container">
+        <img class="section__img" src="./assets/img/marketers/marketer.svg" alt="marketer" />
+      </div>
 
     </div>
   </section>
+
   <section class="strategies">
     <div class="wrapper strategies__wrapper">
-      <h2 class="strategies__title">Marketing Strategies</h2>
+      <h2 class="h2 strategies__title">Marketing Strategies</h2>
       <p class="strategies__text">Join 40,000+ other marketers and get proven strategies on email marketing</p>
       <div class="layout-3-column strategies__container">
 
-        <article class="article">
-          <img class="article__image" src="./assets/img/strategies/increasing-prosperity.png"
-            alt="increasing prosperity" />
-          <span class="article__info">By <span class="bold">Abdullah</span> | 03 March 2019</span>
-          <h5 class="article__title"><a class="article__link" href="#">Increasing Prosperity With Positive
-              Thinking</a></h5>
+        <article class="strategies-article">
+          <div class="strategies-article__image-container">
+            <img class="strategies-article__image" src="./assets/img/strategies/increasing-prosperity.png"
+              alt="increasing prosperity" />
+          </div>
+          <span class="strategies-article__info">By <span class="bold">Abdullah</span> | 03 March 2019</span>
+          <h5 class="h5 strategies-article__title">
+            <a class="strategies-article__link" href="#">Increasing Prosperity With Positive Thinking</a>
+          </h5>
         </article>
 
-        <article class="article">
-          <img class="article__image" src="./assets/img/strategies/motivation.png" alt="motivation" />
-          <span class="article__info">By <span class="bold">Abdullah</span> | 03 March 2019</span>
-          <h5 class="article__title"><a class="article__link" href="#">Motivation Is The First Step To
-              Success</a></h5>
+        <article class="strategies-article">
+          <div class="strategies-article__image-container">
+            <img class="strategies-article__image" src="./assets/img/strategies/motivation.png" alt="motivation" />
+          </div>
+          <span class="strategies-article__info">By <span class="bold">Abdullah</span> | 03 March 2019</span>
+          <h5 class="h5 strategies-article__title">
+            <a class="strategies-article__link" href="#">Motivation Is The First Step To Success</a>
+          </h5>
         </article>
 
-        <article class="article">
-          <img class="article__image" src="./assets/img/strategies/success-steps.png" alt="success steps" />
-          <span class="article__info">By <span class="bold">Abdullah</span> | 03 March 2019</span>
-          <h5 class="article__title"><a class="article__link" href="#">Success Steps For Your Personal Or
-              Business Life</a></h5>
+        <article class="strategies-article">
+          <div class="strategies-article__image-container">
+            <img class="strategies-article__image" src="./assets/img/strategies/success-steps.png"
+              alt="success steps" />
+          </div>
+          <span class="strategies-article__info">By <span class="bold">Abdullah</span> | 03 March 2019</span>
+          <h5 class="h5 strategies-article__title">
+            <a class="strategies-article__link" href="#">Success Steps For Your Personal Or Business Life</a>
+          </h5>
         </article>
 
       </div>
@@ -217,10 +251,11 @@
 
     </div>
   </section>
+
   <footer class="footer">
     <div class="wrapper footer__wrapper">
 
-      <div class="logo">
+      <div class="logo footer__logo">
         <a class="logo__link" href="#">
           <span class="icon logo__icon"></span>
         </a>
@@ -229,49 +264,49 @@
       <div class="footer__layout">
 
         <div class="footer__container">
-          <h6 class="footer__title">Quick Links</h6>
+          <h6 class="h6 footer__title">Quick Links</h6>
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="" class="footer__link">About Us</a>
+              <a href="#" class="footer__link">About Us</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Blog</a>
+              <a href="#" class="footer__link">Blog</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Contact</a>
+              <a href="#" class="footer__link">Contact</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">FAQ</a>
+              <a href="#" class="footer__link">FAQ</a>
             </li>
           </ul>
         </div>
 
         <div class="footer__container">
-          <h6 class="footer__title">Legal Stuff</h6>
+          <h6 class="h6 footer__title">Legal Stuff</h6>
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="" class="footer__link">Disclaimer</a>
+              <a href="#" class="footer__link">Disclaimer</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Financing</a>
+              <a href="#" class="footer__link">Financing</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Privacy Policy</a>
+              <a href="#" class="footer__link">Privacy Policy</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Terms of Service</a>
+              <a href="#" class="footer__link">Terms of Service</a>
             </li>
           </ul>
         </div>
 
         <div class="footer__container">
-          <h6 class="footer__title">knowing you're always on the best energy deal.</h6>
-          <form>
-            <input type="email" class="footer__input" placeholder="Enter your phone Number" />
+          <h6 class="h6 footer__title">knowing you're always on the best energy deal.</h6>
+          <form class="footer__form">
+            <input type="number" class="footer__input" placeholder="Enter your phone Number" />
             <button class="button footer__button">Sign up Now</button>
           </form>
         </div>
-        
+
       </div>
     </div>
   </footer>

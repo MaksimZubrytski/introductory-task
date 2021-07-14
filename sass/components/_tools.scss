@@ -1,55 +1,79 @@
 .tools {
   padding: 48px 0 90px;
   background: url(../assets/img/tools/background.svg) center bottom no-repeat;
+  background-size: contain;
 
-  @include media-small-desktop {
+  @include screen("small-desktop") {
     padding: 60px 20px 90px;
   }
 
-  @include media-mobile-small {
-    padding: 30px 10px 45px;
+  @include screen("mobile-large") {
+    padding: 25px 10px 25px;
   }
 
-}
+  @include screen("mobile-small") {
+    padding: 15px 10px 15px;
+  }
 
-.tools__wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 18px;
-}
+  &__wrapper {
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-.tools__title {
-  max-width: 539px;
-  text-align: center;
+    @include screen("tablet") {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    max-width: 539px;
+    text-align: center;
+
+    @include screen("mobile-large") {
+      margin-top: 10px;
+    }
+  }
+
+  &__button {
+    margin-top: 18px;
+    padding: 15px 34px;
+
+    @include screen("tablet") {
+      margin-top: 30px;
+    }
+  }
 }
 
 .tool {
 
-  @include media-mobile-large {
+  @include screen("tablet") {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 50%;
   }
-  
-}
 
-.tool__title {
-  margin-top: 26px;
-  margin-bottom: 0;
-}
+  @include screen("mobile-large") {
+    min-width: 100%;
+  }
 
-.tool__text {
-  margin-top: 13px;
-}
+  &__title {
+    margin-top: 26px;
+    margin-bottom: 0;
+  }
 
-.tools__button {
-  margin-top: 18px;
-  padding: 15px 34px;
-  font-weight: 700;
-  transition: all 0.3s ease-in-out;
+  &__text {
+    margin-top: 13px;
+    max-width: 240px;
 
-  &:hover {
-    background-color: $hover-color;
+    @include screen("tablet") {
+      text-align: center;
+    }
+
+    @include screen("mobile-large") {
+      max-width: 100%;
+      @include font($size: 1.8rem, $height: 2.8rem, $weight: 500);
+    }
   }
 }

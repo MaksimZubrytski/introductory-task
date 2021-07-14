@@ -1,0 +1,20 @@
+.check-list {
+  padding-left: 65px;
+
+  &__item {
+    position: relative;
+    margin-top: 30px;
+    max-width: 385px;
+    @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+    color: $text-color;
+
+    @include screen("mobile-large") {
+      min-width: 100%;
+      @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+    }
+
+    &:first-child {
+      max-width: 365px;
+    }
+  }
+}
